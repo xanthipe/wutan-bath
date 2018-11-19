@@ -24,7 +24,9 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+gem 'capistrano', '~> 3.11', group: :development
+gem 'capistrano-rails', group: :development
+gem 'capistrano-ext', '~> 1.2', '>= 1.2.1', group: :development
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
@@ -36,8 +38,14 @@ gem 'pundit', '~> 2.0'
 # Markdown and text
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
 gem 'md_simple_editor', '~> 0.3.0'
-gem 'phrasing', '~> 4.2', '>= 4.2.1'
 gem 'kramdown', '~> 1.17'
+
+# Mailing list
+gem 'mailerlite', '~> 1.6', '>= 1.6.1'
+
+# Styling
+gem 'bootstrap', '~> 4.1', '>= 4.1.3'
+gem 'formtastic', '~> 3.1', '>= 3.1.5'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

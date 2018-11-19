@@ -1,33 +1,26 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  home:
+    nav: "Home"
+    index:
+      title: "Wutan Bath Home"
+      blurb: "This is the blurb. It will get updated."
+  about:
+    nav: "About"
+    index:
+      title: "About Wutan Bath"
+      blurb: "I have to configure markdown now."
+  classes:
+    nav: "Classes"
+    index:
+      title: "Classes"
+      blurb: "This is some nonsense."
+  contact:
+    nav: "Contact"
+    index:
+      title: "Contact"
+      blurb: "Contact blurbage."
+  gallery:
+    nav: "Gallery"
+    index:
+      title: "Gallery"
+      blurb: "We don't have a gallery hosted onsite just yet - but you can check out the photos on our Facebook Page in the meantime."

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WutanBath</title>
+    <title>Wutan Bath</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,50 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav>
+      <ul id="nav-list">
+        <li><%= link_to t('home.nav'), home_path %></li>
+        <li><%= link_to t('about.nav'), about_path %></li>
+        <li><%= link_to t('classes.nav'), classes_path %></li>
+        <li><%= link_to t('contact.nav'), contact_path %></li>
+        <li><%= link_to t('gallery.nav'), gallery_path %></li>
+      </ul>
+    </nav>
+
+    <main>
+      <header>
+        <% if flash[ :notice ] %>
+          <div class="success"><%= flash[ :notice ] %></div>
+        <% end %>
+        <% if flash[ :warning ] %>
+          <div class="notice"><%= flash[ :warning ] %></div>
+        <% end %>
+        <% if flash[ :alert ] %>
+          <div class="notice"><%= flash[ :alert ] %></div>
+        <% end %>
+        <% if flash[ :error ] %>
+          <div class="error"><%= flash[ :error ] %></div>
+        <% end %>
+      </header>
+
+      <article>
+        <%= yield %>
+      </article>
+
+      <footer>
+        <p>
+          Site design is copyright &copy; Judith Owens 2018-<%= Time.now.strftime("%Y") %><br/>
+          If you spot any bugs or have an idea for a new feature, please visit <a href="https://github.com/xanthipe/wutan-bath" target="_blank">our Github repository</a>.<br />
+          <% if user_signed_in? %>
+            Logged in as <%=h current_user.username %>
+            <%= link_to 'Log out', destroy_user_session_path, :method => :delete %>
+            <%= hidden_field_tag "logged_in", true %>
+        <% else %>
+            <%= link_to 'Login', new_user_session_path %>
+            <%= hidden_field_tag "logged_in", false %>
+        <% end %>
+        </p>
+      </footer>
+    </main>
   </body>
 </html>
