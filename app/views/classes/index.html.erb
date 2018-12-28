@@ -1,2 +1,36 @@
-<h1><%= t('.title') %></h1>
-<p><%= t('.blurb') %></p>
+<h2><%= t('.title') %></h2>
+<p>This page is updated on a regular basis - keep checking back to see what's new. Please note that in addition to per session costs there is an annual £20 membership of Wutan as a whole which also covers insurance.</p>
+<section>
+  <h3>Regular Classes</h3>
+  <div class="details-block">
+    <h4 class="details-header">Monday 19:00 - 21:00 - Tai Chi Intermediate/Advanced</h4>
+    <div class="details-contents">
+      <p><span class="details-title">Instructor: </span><%= link_to 'Marick Baxter', contact_path(anchor: 'marick') %></p>
+      <p><span class="details-title">Location: </span>Bath Central United Reformed Church, <%= link_to 'Google Maps link', 'https://goo.gl/maps/sd2GSAfXCby', target: "_blank" %></p>
+      <p>This is an ongoing class practicing Qigong, Ba Gua, weapon forms and the Yang-style short Tai Chi form.</p>
+      <p><span class="details-title">Price per session: </span>£7</p>
+    </div>
+  </div>
+  <div class="details-block">
+    <h4 class="details-header">Wednesday 11:00 - 12:00 - Seated Tai Chi</h4>
+    <div class="details-contents">
+      <p><span class="details-title">Instructor: </span><%= link_to 'Jim Litster', contact_path(anchor: 'jim') %></p>
+      <p><span class="details-title">Location: </span>Weston Parish Hall, <%= link_to 'Google Maps link', 'https://goo.gl/maps/1EsCpCo8CtR2', target: "_blank" %></p>
+      <p>This is an ongoing class practicing a seated form of Tai Chi.</p>
+      <p><span class="details-title">Price per session: </span>£TBD</p>
+    </div>
+  </div>
+  <div class="details-block">
+    <h4 class="details-header">Wednesday 19:30 - 21:15 - Tai Chi Intermediate/Advanced</h4>
+    <div class="details-contents">
+      <p><span class="details-title">Instructor: </span><%= link_to 'David Rutherford', contact_path(anchor: 'david') %></p>
+      <p><span class="details-title">Location: </span>Hayesfield Lower School, <%= link_to 'Google Maps link', 'https://goo.gl/maps/q2sjVcCq47J2', target: "_blank" %></p>
+      <p>This is an ongoing class practicing Qigong followed by miscellaneous training (Bagua, sensing hands etc.) and finishing with the Yang-style short form.</p>
+      <p><span class="details-title">Price per session: </span>£8</p>
+    </div>
+  </div>
+</section>
+<section>
+  <h3>Events and Seminars</h3>
+  <p>There are no events or seminars planned at present.</p>
+</section>

@@ -7,53 +7,55 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag 'favicon.ico' %>
+    <%= favicon_link_tag 'favicon-16x16.png', type: 'image/png', sizes: '16x16' %>
+    <%= favicon_link_tag 'favicon-32x32.png', type: 'image/png', sizes: '32x32' %>
+
+    <meta name="keywords" content="Tai Chi, fitness, meditation, Kung Fu, mindfulness, health, Bath">
+    <meta name="description" content="The Bath UK branch of the Wutan martial arts school for Tai Chi and Kung Fu.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   </head>
 
   <body>
-    <nav>
-      <ul id="nav-list">
-        <li><%= link_to t('home.nav'), home_path %></li>
-        <li><%= link_to t('about.nav'), about_path %></li>
-        <li><%= link_to t('classes.nav'), classes_path %></li>
-        <li><%= link_to t('contact.nav'), contact_path %></li>
-        <li><%= link_to t('gallery.nav'), gallery_path %></li>
-      </ul>
-    </nav>
+    <div class="page-wrapper">
+      <h1 class="main-header"><%= link_to 'Wutan Bath', home_path %></h1>
+      <nav>
+        <ul id="nav-list">
+          <li><%= link_to t('about.nav'), about_path %></li>
+          <li><%= link_to t('classes.nav'), classes_path %></li>
+          <li><%= link_to t('contact.nav'), contact_path %></li>
+          <li><%= link_to t('gallery.nav'), gallery_path %></li>
+        </ul>
+      </nav>
 
-    <main>
-      <header>
-        <% if flash[ :notice ] %>
-          <div class="success"><%= flash[ :notice ] %></div>
-        <% end %>
-        <% if flash[ :warning ] %>
-          <div class="notice"><%= flash[ :warning ] %></div>
-        <% end %>
-        <% if flash[ :alert ] %>
-          <div class="notice"><%= flash[ :alert ] %></div>
-        <% end %>
-        <% if flash[ :error ] %>
-          <div class="error"><%= flash[ :error ] %></div>
-        <% end %>
-      </header>
+      <main>
+        <header>
+          <% if flash[ :notice ] %>
+            <div class="success"><%= flash[ :notice ] %></div>
+          <% end %>
+          <% if flash[ :warning ] %>
+            <div class="notice"><%= flash[ :warning ] %></div>
+          <% end %>
+          <% if flash[ :alert ] %>
+            <div class="notice"><%= flash[ :alert ] %></div>
+          <% end %>
+          <% if flash[ :error ] %>
+            <div class="error"><%= flash[ :error ] %></div>
+          <% end %>
+        </header>
 
-      <article>
-        <%= yield %>
-      </article>
+        <article>
+          <%= yield %>
+        </article>
 
-      <footer>
-        <p>
-          Site design is copyright &copy; Judith Owens 2018-<%= Time.now.strftime("%Y") %><br/>
-          If you spot any bugs or have an idea for a new feature, please visit <a href="https://github.com/xanthipe/wutan-bath" target="_blank">our Github repository</a>.<br />
-          <% if user_signed_in? %>
-            Logged in as <%=h current_user.username %>
-            <%= link_to 'Log out', destroy_user_session_path, :method => :delete %>
-            <%= hidden_field_tag "logged_in", true %>
-        <% else %>
-            <%= link_to 'Login', new_user_session_path %>
-            <%= hidden_field_tag "logged_in", false %>
-        <% end %>
-        </p>
-      </footer>
-    </main>
+        <footer>
+          <p class="copyright">
+            Site design is copyright &copy; Judith Owens 2018-<%= Time.now.strftime("%Y") %><br/>
+            If you spot any bugs or have an idea for a new feature, please visit <a href="https://github.com/xanthipe/wutan-bath" target="_blank">our Github repository</a>.<br />
+          </p>
+        </footer>
+      </main>
+    </div>
   </body>
 </html>

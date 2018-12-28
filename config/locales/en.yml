@@ -1,26 +1,21 @@
 en:
   home:
-    nav: "Home"
     index:
-      title: "Wutan Bath Home"
       blurb: "This is the blurb. It will get updated."
   about:
     nav: "About"
     index:
-      title: "About Wutan Bath"
-      blurb: "I have to configure markdown now."
+      title-wutan: "About Wutan"
+      title-local: "About Wutan Bath"
   classes:
     nav: "Classes"
     index:
       title: "Classes"
-      blurb: "This is some nonsense."
   contact:
     nav: "Contact"
     index:
       title: "Contact"
-      blurb: "Contact blurbage."
   gallery:
     nav: "Gallery"
     index:
       title: "Gallery"
-      blurb: "We don't have a gallery hosted onsite just yet - but you can check out the photos on our Facebook Page in the meantime."
