@@ -7,6 +7,8 @@ set :repo_url, "git@github.com:xanthipe/wutan-bath.git"
 set :rvm_type, :system
 set :rvm_ruby_version, '2.5.3@wutan-bath'
 
+append :linked_dirs, '.bundle'
+
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
