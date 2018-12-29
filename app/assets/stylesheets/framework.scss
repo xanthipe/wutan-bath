@@ -23,6 +23,7 @@ body {
     display: block;
 
     .main-header {
+      display: block;
       text-align: center;
       a {
         color: $font;
@@ -61,7 +62,7 @@ body {
       padding: 1em;
 
       article {
-        min-height: 60vh;
+        min-height: 30vh;
       }
 
       .details-block {
@@ -88,8 +89,15 @@ body {
 
       footer {
         margin-top: 1em;
+
+        .footer-image {
+          display: block;
+          position: relative;
+          margin: 0 auto;
+        }
+
         .copyright {
-          text-align: right;
+          text-align: center;
           font-style: italic;
           font-size: 0.7em;
         }
