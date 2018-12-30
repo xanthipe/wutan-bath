@@ -11,6 +11,41 @@ append :linked_dirs, '.bundle'
 set :bundle_path, -> { '/usr/local/rvm/gems/2.5.3@wutan-bath/' }
 set :linked_files, %w{config/master.key}
 
+namespace :deploy do
+
+  desc 'Restart application'
+  task :restart do
+    on roles(:app), in: :sequence, wait: 5 do
+      # Your restart mechanism here, for example:
+      execute :touch, release_path.join('tmp/restart.txt')
+    end
+  end
+
+  after :publishing, :restart
+
+  after :restart, :clear_cache do
+    on roles(:web), in: :groups, limit: 3, wait: 10 do
+      # Here we can do anything such as:
+      # within release_path do
+      #   execute :rake, 'cache:clear'
+      # end
+    end
+  end
+
+  # Run 'cap production deploy:seed' to seed your database
+  # desc 'Runs rake db:seed'
+  # task :seed => [:set_rails_env] do
+  #   on primary fetch(:migration_role) do
+  #     within release_path do
+  #       with rails_env: fetch(:rails_env) do
+  #         execute :rake, "db:seed"
+  #       end
+  #     end
+  #   end
+  # end
+
+end
+
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
