@@ -9,6 +9,7 @@ set :rvm_ruby_version, '2.5.3@wutan-bath'
 
 append :linked_dirs, '.bundle'
 set :bundle_path, -> { '/usr/local/rvm/gems/2.5.3@wutan-bath/' }
+set :linked_files, %w{config/master.key}
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
