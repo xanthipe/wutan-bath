@@ -2,10 +2,8 @@
   "name": "wutan-bath",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "3.5",
     "sanitize.css": "^8.0.0"
   },
   "devDependencies": {
-    "webpack-dev-server": "2.11.2"
   }
 }
