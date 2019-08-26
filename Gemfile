@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2'
+gem 'rails', '~> 6.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.3'
 # Use Puma as the app server
@@ -18,10 +18,11 @@ gem 'uglifier', '~> 4.1'
 
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5.2'
-gem 'coffee-rails', '~> 4.1', '>= 4.1.1'
+gem 'coffee-rails', '~> 5.0'
+gem "nokogiri", ">= 1.10.4"
 
 # Auth and roles
-gem 'devise', '~> 4.5'
+gem 'devise', '~> 4.6', '>= 4.6.0'
 gem 'pundit', '~> 2.0'
 
 # Mailing list
@@ -52,6 +53,5 @@ group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 3.10'
   gem 'selenium-webdriver', '~> 3.141'
-  # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper', '~> 2.1'
+  gem 'webdrivers', '~> 4.0'
 end
