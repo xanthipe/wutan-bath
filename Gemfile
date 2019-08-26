@@ -28,7 +28,7 @@ gem 'pundit', '~> 2.0'
 gem 'mailerlite', '~> 1.6'
 
 # Styling
-gem 'bootstrap', '~> 4.1'
+gem 'bootstrap', '~> 4.3'
 gem 'formtastic', '~> 3.1'
 gem 'font-awesome-sass', '~> 5.5'
 
