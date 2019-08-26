@@ -18,6 +18,7 @@ gem 'uglifier', '~> 4.1'
 
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5.2'
+gem 'coffee-rails', '~> 4.1', '>= 4.1.1'
 
 # Auth and roles
 gem 'devise', '~> 4.5'
@@ -27,7 +28,6 @@ gem 'pundit', '~> 2.0'
 gem 'mailerlite', '~> 1.6'
 
 # Styling
-gem 'normalize-rails', '~> 4.1'
 gem 'bootstrap', '~> 4.1'
 gem 'formtastic', '~> 3.1'
 gem 'font-awesome-sass', '~> 5.5'
@@ -38,7 +38,6 @@ group :development, :test do
 end
 
 group :development do
-  gem 'solargraph', '~> 0.35'
   gem 'listen', '~> 3.1'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring', '~> 2.0'
