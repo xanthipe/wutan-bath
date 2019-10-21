@@ -22,7 +22,7 @@ gem 'coffee-rails', '~> 5.0'
 gem "nokogiri", ">= 1.10.4"
 
 # Auth and roles
-gem 'devise', '~> 4.6', '>= 4.6.0'
+gem 'devise', '~> 4.7'
 gem 'pundit', '~> 2.0'
 
 # Mailing list
