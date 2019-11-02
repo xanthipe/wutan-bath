@@ -18,20 +18,19 @@
   </head>
 
   <body>
-    <div class="container-fluid">
-      <header id="header" class="row">
-        <div class="col-12">
-          <%= render 'layouts/header' %>
-        </div>
+    <div class="container page-wrapper">
+      <header id="header">
+        <%= render 'layouts/header' %>
       </header>
-      <section id="messages" class="row">
-        <div class="col-6 offset-3">
-          <%= render 'layouts/messages' %>
-        </div>
+      <section id="messages">
+        <%= render 'layouts/messages' %>
       </section>
-      <main>
+      <main id="main">
         <%= yield %>
       </main>
+      <footer id="footer">
+        <%= render 'layouts/footer' %>
+      </footer>
     </div>
   </body>
 </html>
