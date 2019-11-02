@@ -21,10 +21,10 @@
     <div class="container page-wrapper">
       <header id="header">
         <%= render 'layouts/header' %>
+        <section id="messages">
+          <%= render 'layouts/messages' %>
+        </section>
       </header>
-      <section id="messages">
-        <%= render 'layouts/messages' %>
-      </section>
       <main id="main">
         <%= yield %>
       </main>
