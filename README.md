@@ -1,21 +1,7 @@
-# README
+# Wutan Bath Website
 
-This website is nowhere near done, please leave this repo alone for now. It will, eventually, be the website for Wutan Bath.
+This is an ongoing attempt to give Wutan (UK) Bath a vaguely modern, functional, up-to-date website.
 
-Things you may want to cover:
+It runs on Ruby on Rails (currently Ruby 2.6.5 on Rails 6).
 
-* Ruby version: 2.5.3
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+More details will be added - including install instructions etc. - as events warrant.

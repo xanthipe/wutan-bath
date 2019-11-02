@@ -8,7 +8,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = 'e5178362436c260e32c05cbb2540172c3a604502c32bf969b85ba0ccce2fee871201f622ac604c343f81a35e83dc82c064f6a4f2d8190197ff1293b23dafd86e'
+  # config.secret_key = '702addea4e523efab0bf5ccf6cc0ef66f36a10495012ebb5983ed2d009b900f0016d5f33febdb4b653fc2b864919d1d2a9b8eedc0ed8c72afb4799fe91794488'
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -18,13 +18,13 @@ Devise.setup do |config|
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'info@bathtaichi.co.uk'
+  config.mailer_sender = 'enquiries@wutanbath.org.uk'
 
   # Configure the class responsible to send e-mails.
-  config.mailer = 'Devise::Mailer'
+  # config.mailer = 'Devise::Mailer'
 
   # Configure the parent class responsible to send e-mails.
-  config.parent_mailer = 'ActionMailer::Base'
+  # config.parent_mailer = 'ActionMailer::Base'
 
   # ==> ORM configuration
   # Load and configure the ORM. Supports :active_record (default) and
@@ -76,12 +76,12 @@ Devise.setup do |config|
   # config.http_authenticatable_on_xhr = true
 
   # The realm used in Http Basic Authentication. 'Application' by default.
-  # config.http_authentication_realm = 'Application'
+  config.http_authentication_realm = 'WutanBath'
 
   # It will change confirmation, password recovery and other workflows
   # to behave the same regardless if the e-mail provided was right or wrong.
   # Does not affect registerable.
-  # config.paranoid = true
+  config.paranoid = true
 
   # By default Devise will store the user in session. You can skip storage for
   # particular strategies by setting this option.
@@ -114,20 +114,72 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = '80d791a0da2f791e84a9329b1c9128fd4dd2c8f7d8be72459e4277070158c1de9b7d055de2542b99b09086f3d48d72fe21652ec6171cc35853d9cf858e6af05f'
+  config.pepper = WutanBath::Application.credentials.devise_pepper
 
   # Send a notification to the original email when the user's email is changed.
-  # config.send_email_changed_notification = false
+  config.send_email_changed_notification = true
 
   # Send a notification email when the user's password is changed.
-  # config.send_password_change_notification = false
+  config.send_password_change_notification = true
+
+  # ==> Configuration for :invitable
+  # The period the generated invitation token is valid.
+  # After this period, the invited resource won't be able to accept the invitation.
+  # When invite_for is 0 (the default), the invitation won't expire.
+  # config.invite_for = 2.weeks
+
+  # Number of invitations users can send.
+  # - If invitation_limit is nil, there is no limit for invitations, users can
+  # send unlimited invitations, invitation_limit column is not used.
+  # - If invitation_limit is 0, users can't send invitations by default.
+  # - If invitation_limit n > 0, users can send n invitations.
+  # You can change invitation_limit column for some users so they can send more
+  # or less invitations, even with global invitation_limit = 0
+  # Default: nil
+  # config.invitation_limit = 5
+
+  # The key to be used to check existing users when sending an invitation
+  # and the regexp used to test it when validate_on_invite is not set.
+  # config.invite_key = { email: /\A[^@]+@[^@]+\z/ }
+  # config.invite_key = { email: /\A[^@]+@[^@]+\z/, username: nil }
+
+  # Ensure that invited record is valid.
+  # The invitation won't be sent if this check fails.
+  # Default: false
+  config.validate_on_invite = true
+
+  # Resend invitation if user with invited status is invited again
+  # Default: true
+  # config.resend_invitation = false
+
+  # The class name of the inviting model. If this is nil,
+  # the #invited_by association is declared to be polymorphic.
+  # Default: nil
+  # config.invited_by_class_name = 'User'
+
+  # The foreign key to the inviting model (if invited_by_class_name is set)
+  # Default: :invited_by_id
+  # config.invited_by_foreign_key = :invited_by_id
+
+  # The column name used for counter_cache column. If this is nil,
+  # the #invited_by association is declared without counter_cache.
+  # Default: nil
+  # config.invited_by_counter_cache = :invitations_count
+
+  # Auto-login after the user accepts the invite. If this is false,
+  # the user will need to manually log in after accepting the invite.
+  # Default: true
+  # config.allow_insecure_sign_in_after_accept = false
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
   # confirming their account. For instance, if set to 2.days, the user will be
   # able to access the website for two days without confirming their account,
-  # access will be blocked just in the third day. Default is 0.days, meaning
-  # the user cannot access the website without confirming their account.
+  # access will be blocked just in the third day.
+  # You can also set it to nil, which will allow the user to access the website
+  # without confirming their account.
+  # Default is 0.days, meaning the user cannot access the website without
+  # confirming their account.
   # config.allow_unconfirmed_access_for = 2.days
 
   # A period that the user is allowed to confirm their account before their
@@ -136,7 +188,7 @@ Devise.setup do |config|
   # their account can't be confirmed with the token any more.
   # Default is nil, meaning there is no restriction on how long a user can take
   # before confirming their account.
-  # config.confirm_within = 3.days
+  config.confirm_within = 1.weeks
 
   # If true, requires any email changes to be confirmed (exactly the same way as
   # initial account confirmation) to be applied. Requires additional unconfirmed_email
@@ -145,7 +197,7 @@ Devise.setup do |config|
   config.reconfirmable = true
 
   # Defines which key will be used when confirming an account
-  # config.confirmation_keys = [:email]
+  config.confirmation_keys = [:email]
 
   # ==> Configuration for :rememberable
   # The time the user will be remembered without asking for credentials again.
@@ -209,7 +261,7 @@ Devise.setup do |config|
   # Time interval you can reset your password with a reset password key.
   # Don't put a too small interval or your users won't have the time to
   # change their passwords.
-  config.reset_password_within = 24.hours
+  config.reset_password_within = 6.hours
 
   # When set to false, does not sign a user in automatically after their password is
   # reset. Defaults to true, so a user is signed in automatically after a reset.
@@ -284,7 +336,13 @@ Devise.setup do |config|
   # ==> Turbolinks configuration
   # If your app is using Turbolinks, Turbolinks::Controller needs to be included to make redirection work correctly:
   #
-  # ActiveSupport.on_load(:devise_failure_app) do
-  #   include Turbolinks::Controller
-  # end
+  ActiveSupport.on_load(:devise_failure_app) do
+    include Turbolinks::Controller
+  end
+
+  # ==> Configuration for :registerable
+
+  # When set to false, does not sign a user in automatically after their password is
+  # changed. Defaults to true, so a user is signed in automatically after changing a password.
+  # config.sign_in_after_change_password = true
 end

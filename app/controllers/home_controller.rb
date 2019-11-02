@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
-  def index
-  end
+    def index
+        @page_title = 'Home'
+    end
 end
