@@ -5,7 +5,13 @@
 </div>
 <div class="row justify-content-center">
     <p class="col-12 copyright">
-    Site design is copyright &copy; Judith Owens 2018-<%= Time.now.strftime("%Y") %><br/>
+    Site design is copyright &copy; Judith Owens 2018-<%= Time.now.strftime("%Y") %> 
+    <% if current_user %>
+        <%= link_to('Sign out',  destroy_user_session_path, :method => 'delete' ) %>
+    <% else %>
+        <%= link_to('Sign in',  new_user_session_path) %>
+    <% end %>
+    <br/>
     If you spot any bugs or have an idea for a new feature, please visit <a href="https://github.com/xanthipe/wutan-bath" target="_blank">our Github repository</a>.<br />
     </p>
 </div>
