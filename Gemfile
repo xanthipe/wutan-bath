@@ -1,58 +1,38 @@
-source 'https://rubygems.org'
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
-
-ruby '2.6.3'
-
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.0'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.3'
-# Use Puma as the app server
-gem 'puma', '~> 3.12'
-# Use SCSS for stylesheets
-gem 'sassc', '~> 2.0'
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '~> 4.1'
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'mini_racer', platforms: :ruby
-
-# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5.2'
-gem 'coffee-rails', '~> 5.0'
-gem "nokogiri", ">= 1.10.4"
-
-# Auth and roles
-gem 'devise', '~> 4.7'
-gem 'pundit', '~> 2.0'
-
-# Mailing list
-gem 'mailerlite', '~> 1.6'
-
-# Styling
-gem 'bootstrap', '~> 4.3'
-gem 'formtastic', '~> 3.1'
-gem 'font-awesome-sass', '~> 5.5'
-
-group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', '~> 10.0', platforms: [:mri, :mingw, :x64_mingw]
+source "https://rubygems.org"
+# Hello! This is where you manage which Jekyll version is used to run.
+# When you want to use a different version, change it below, save the
+# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
+#
+#     bundle exec jekyll serve
+#
+# This will help ensure the proper Jekyll version is running.
+# Happy Jekylling!
+# gem "jekyll", "~> 4.3.2"
+# This is the default theme for new Jekyll sites. You may change this to anything you like.
+# gem "minima", "~> 2.5"
+# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
+# uncomment the line below. To upgrade, run `bundle update github-pages`.
+gem "github-pages", group: :jekyll_plugins
+# If you have any plugins, put them here!
+group :jekyll_plugins do
+  gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-sitemap"
+  gem "jekyll-seo-tag"
+  gem "jekyll-paginate"
 end
 
-group :development do
-  gem 'listen', '~> 3.1'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring', '~> 2.0'
-  gem 'spring-watcher-listen', '~> 2.0'
-  # Use Capistrano for deployment
-  gem 'capistrano', '~> 3.11'
-  gem 'capistrano-rails', '~> 1.4'
-  gem 'capistrano-bundler', '~> 1.6'
-  gem 'capistrano-rvm', '~> 0.1'
+# Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
+# and associated library.
+platforms :mingw, :x64_mingw, :mswin, :jruby do
+  gem "tzinfo", ">= 1", "< 3"
+  gem "tzinfo-data"
 end
 
-group :test do
-  # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '~> 3.10'
-  gem 'selenium-webdriver', '~> 3.141'
-  gem 'webdrivers', '~> 4.0'
-end
+# Performance-booster for watching directories on Windows
+gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
+
+# Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
+# do not have a Java counterpart.
+gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
+
+gem "webrick", "~> 1.8"
