@@ -1,0 +1,73 @@
+- name: Monday
+  classes:
+  - name: Tai Chi
+    start: '19:00'
+    end: '20:00'
+    instructor: marick
+    location: 'Central United Reformed Church, Frome Road'
+    map_link: nyw3JWx1VNhMAH2z5
+    description: This is an ongoing class practicing Qigong, Ba Gua, Hsing I, weapon forms
+        and the Yang-style short Tai Chi form. All levels of experience are welcome.
+    price: £7
+  - name: Kung Fu
+    start: '20:30'
+    end: '22:00'
+    instructor: marick
+    location: 'Central United Reformed Church, Frome Road'
+    map_link: nyw3JWx1VNhMAH2z5
+    description: This is an ongoing class practicing Wing Chun Preying Mantis style,
+        Chai Lei Fut and Chinese Kickboxing. All levels of experience are welcome.
+    price: £7
+- name: Tuesday
+  classes:
+  - name: Children and Youths Kung Fu
+    start: '17:00'
+    end: '18:30'
+    instructor: marick
+    location: 'Central United Reformed Church, Frome Road'
+    map_link: nyw3JWx1VNhMAH2z5
+    description: This is an ongoing class practicing Wing Chun Preying Mantis style,
+        Chai Lei Fut and Chinese Kickboxing tailored to the younger generations.
+        All levels of experience are welcome.
+    price: £7
+  - name: Five Animals Kung Fu
+    start: '18:30'
+    end: '20:00'
+    instructor: marick
+    location: 'Central United Reformed Church, Frome Road'
+    map_link: nyw3JWx1VNhMAH2z5
+    description: This is an ongoing class practicing the Five Animal styles of Kung Fu.
+        All levels of experience are welcome.
+    price: £7
+- name: Wednesday
+  classes:
+  - name: Seated Tai Chi
+    start: '11:00'
+    end: '12:00'
+    instructor: jim
+    location: 'Weston Parish Hall, Church Street'
+    map_link: 1EsCpCo8CtR2
+    description: This is an ongoing class practicing a seated form of Tai Chi.
+    price: £TBD
+  - name: Seated Tai Chi
+    start: '19:30'
+    end: '21:15'
+    instructor: david
+    location: 'Hayesfield Lower School, Brougham Hayes'
+    map_link: yHmXikrBBTaLc1Cn9
+    description: This is an ongoing class practicing Qigong followed by miscellaneous
+        training (Bagua, sensing hands etc.) and finishing with the Yang-style
+        short form. All levels of experience are welcome, but please contact David
+        to check for specific beginner sessions.
+    price: £8
+- name: Thursday
+  classes:
+  - name: Kung Fu
+    start: '19:30'
+    end: '21:00'
+    instructor: marick
+    location: 'Nexus Methodist Church, Eastbourne Avenue'
+    map_link: 1YpzY64oj582
+    description: This is an ongoing class practicing Wing Chun Preying Mantis style,
+        Chai Lei Fut and Chinese Kickboxing. All levels of experience are welcome.
+    price: £7
