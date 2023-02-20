@@ -1,0 +1,8 @@
+{
+  "name": "wutan-bath",
+  "private": true,
+  "dependencies": {
+    "sanitize.css": "^8.0.0"
+  },
+  "devDependencies": {}
+}

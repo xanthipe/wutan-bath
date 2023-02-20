@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<p>Control, discipline, flexibility, balance: learning a martial art teaches you all of these things in body, mind and
+  soul.</p>
+
+<p>With the Bath branch of Wutan, the UK's oldest traditional school of Chinese martial arts, you can learn different
+  arts
+  to suit your particular needs and focus. Beginners are always welcome in any class, although there are some classes
+  specifically tailored to beginners. We also have some classes specifically for children.</p>
+
+<div class="posts">
+  <h2>Latest news</h2>
+  {% for post in paginator.posts %}
+  <article class="post">
+    <a href="{{ site.baseurl }}{{ post.url }}">
+      <h3>{{ post.title }}</h3>
+
+      <div>
+        <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
+      </div>
+    </a>
+    <div class="entry">
+      {{ post.excerpt }}
+    </div>
+
+    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+  </article>
+  {% endfor %}
+
+  <!-- pagination -->
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+    {% else %}
+    <span>&laquo; Prev</span>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+    <span class="webjeda">{{ page }}</span>
+    {% elsif page == 1 %}
+    <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+    <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page
+      }}</a>
+    {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+    {% else %}
+    <span>Next &raquo;</span>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>
