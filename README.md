@@ -1,21 +1,26 @@
-# README
+# Wutan Bath Website
 
-This website is nowhere near done, please leave this repo alone for now. It will, eventually, be the website for Wutan Bath.
+Built with Jekyll using a modified Reverie theme. 
 
-Things you may want to cover:
+## News Posts
 
-* Ruby version: 2.5.3
+* Either create a new branch off `develop` or, if using the Github editor, remember to commit to a new branch.
+* Create a file under `_posts` called `yyyy-mm-dd-post-name-in-kebab-case.md`.
+* Copy the header block from an older post to your new file and update the details.
+* Write the rest of the post in Markdown.
+* Commit, make a pull request back to develop and merge.
+* When you're happy, create a pull request to merge `develop` to `master` and merge.
+* Wait for the build to run, check the site has updated!
 
-* System dependencies
+## Classes/Instructors
 
-* Configuration
+* Either create a new branch off `develop` or, if using the Gothub editor, remember to commit to a new branch.
+* Open up `_data/classes.yml` or `_data/instructors.yml`.
+* Make your changes, being careful to keep the whitespace on each line as-is
+* Commit, make a pull request back to develop and merge.
+* When you're happy, create a pull request to merge `develop` to `master` and merge.
+* Wait for the build to run, check the site has updated!
 
-* Database creation
+### License
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+MIT
