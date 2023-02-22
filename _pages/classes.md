@@ -4,7 +4,7 @@ title: Classes
 permalink: /classes/
 ---
 
-# Classes
+# {{ page.title }}
 
 This page is updated on a regular basis - keep checking back to see what's new. Please note that in addition to per session costs there is an annual £20 membership of Wutan as a whole which also covers insurance.
 

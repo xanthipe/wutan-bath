@@ -4,8 +4,13 @@ permalink: /categories/
 title: Categories
 ---
 
+# {{ page.title }}
 
 <div id="archives">
+
+  <section>
+      <h4><a href="/archive">Search by post date</a></h4>
+  </section>
 {% for category in site.categories %}
   <div class="archive-group">
     {% capture category_name %}{{ category | first }}{% endcapture %}

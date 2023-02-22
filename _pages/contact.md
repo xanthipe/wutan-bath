@@ -4,7 +4,7 @@ title: Contact
 permalink: /contact/
 ---
 
-# Contact
+# {{ page.title }}
 
 We have a [mailing list](https://landing.mailerlite.com/webforms/landing/{{ site.footer-links.mailerlite }}), a [Facebook page](https://www.facebook.com/{{ site.footer-links.facebook }}) and a [Twitter feed](https://www.twitter.com/{{ site.footer-links.twitter }}) for generally keeping up to date with the club.
 
