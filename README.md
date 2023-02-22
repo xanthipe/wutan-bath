@@ -1,6 +1,6 @@
 # Wutan Bath Website
 
-Built with Jekyll using a modified Reverie theme. 
+Built with [Jekyll](https://jekyllrb.com/) using a modified [Reverie](https://github.com/amitmerchant1990/reverie) theme. 
 
 ## News Posts
 

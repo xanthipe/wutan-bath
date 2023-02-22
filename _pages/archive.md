@@ -4,6 +4,7 @@ permalink: /archive/
 title: Posts Archive
 ---
 
+# {{ page.title }}
 
 <div id="archives">
   <section id="search">
@@ -22,6 +23,9 @@ title: Posts Archive
         json: '{{ site.baseurl }}/search.json'
         });
     </script>
+  </section>
+  <section>
+    <h4><a href="/categories">Search by post category</a></h4>
   </section>
   <section id="archive">
      <h3>Most Recent Posts</h3>
