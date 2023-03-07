@@ -40,7 +40,7 @@
     description: This is an ongoing class practicing a seated form of Tai Chi.
     price: £TBD
   - name: Yang Form Tai Chi
-    start: '19:30'
+    start: '19:00'
     end: '21:15'
     instructor: david
     location: 'Hayesfield Lower School, Brougham Hayes'
@@ -49,4 +49,4 @@
         training (Bagua, sensing hands etc.) and finishing with the Yang-style
         short form. All levels of experience are welcome, but please contact David
         to check for specific beginner sessions.
-    price: £8
+    price: £10
