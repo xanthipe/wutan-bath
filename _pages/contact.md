@@ -6,9 +6,9 @@ permalink: /contact/
 
 # {{ page.title }}
 
-We have a [mailing list](https://landing.mailerlite.com/webforms/landing/{{ site.footer-links.mailerlite }}), a [Facebook page](https://www.facebook.com/{{ site.footer-links.facebook }}) and a [Twitter feed](https://www.twitter.com/{{ site.footer-links.twitter }}) for generally keeping up to date with the club.
+We have a [mailing list](https://landing.mailerlite.com/webforms/landing/{{ site.footer-links.mailerlite }}) and various social accounts for keeping in touch with the club - just check out the links at the bottom of the page.
 
-If you want to get in contact more directly, either send us a message via Facebook or get in touch directly with the appropriate instructor.
+If you want to get in contact more directly, either send us a message via Facebook or get in touch with the appropriate instructor.
 
 ## Instructors
 
