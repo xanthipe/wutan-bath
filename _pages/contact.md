@@ -14,12 +14,14 @@ If you want to get in contact more directly, either send us a message via Facebo
 
 {% for instructor_hash in site.data.instructors %}
 {% assign instructor = instructor_hash[1] %}
-<div class="details-block">
+<div class="details-block" id="{{ instructor_hash[0] }}">
   <h4 class="details-header">{{ instructor.name }}</h4>
   <div class="details-contents">
     <p><span class="details-title">Email: </span>{% if instructor.email %}<a href="mailto:{{ instructor.email }}">{{ instructor.email }}</a>{% else %}N/A{% endif %}</p>
     <p><span class="details-title">Phone: </span>{{ instructor.phone }}</p>
-    <p>{{ instructor.description }}</p>
+    <div>
+      {{ instructor.description | markdownify }}
+    </div>
   </div>
 </div>
 {% endfor %}

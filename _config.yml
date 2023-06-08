@@ -5,11 +5,17 @@
 # Name of your site (displayed in the header)
 title: Wutan Bath
 
+# Brief description of the site for SEO
+tagline: Tai Chi and Kung Fu with the Bath branch of Wutan
+
 # Name of the author
 author: Wutan Bath
 
-# Short bio or description (displayed in the header)
-description: "Control, discipline, flexibility, balance"
+# Site description for SEO
+description: Tai Chi and Kung Fu from the Wutan school in Bath, Bradford on Avon and Radstock
+
+# Header text
+header: "Control, discipline, flexibility, balance"
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: /images/dragonphoenixbanner.png
@@ -36,6 +42,23 @@ footer-links:
   playconsole:
   mastodon: # <your-mastodon-instance>/@<your-user-name> eg. fosstodon.org/@username
   mailerlite: o5b1l1
+
+twitter:
+  username: wutanbath
+  card: summary
+
+facebook:
+  publisher: Wutanbath
+
+social:
+  name: Wutan Bath
+  links:
+    - https://twitter.com/wutanbath
+    - https://www.facebook.com/Wutanbath
+    - https://instagram.com/wutanbath
+    - https://github.com/xanthipe/wutan-bath
+
+locale: en-GB
 
 # Your website URL (e.g. http://amitmerchant1990.github.io or http://www.amitmerchant.com)
 # Used for Sitemap.xml and your RSS feed
