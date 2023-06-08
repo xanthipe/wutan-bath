@@ -18,10 +18,10 @@ This page is updated on a regular basis - keep checking back to see what's new. 
         <div class="details-contents">
             <p><span class="details-title">Instructor: </span>{% if instructor.email %}<a href="mailto:{{ instructor.email }}">{{ instructor.name }}</a>{% else %}{{ instructor.name }}{% endif %}{% if instructor.phone %} - {{ instructor.phone }}{% endif %}</p>
             <p><span class="details-title">Location: </span>{{ class.location }}<br /><a href="https://goo.gl/maps/{{ class.map_link }}" target="_blank">Google Maps link</a></p>
-            <p>
-                {{ class.description }}
-            </p>
-            <p><span class="details-title">Price per session: </span>{{ class.price }}</p>
+            <div>
+                {{ class.description  | markdownify }}
+            </div>
+            <p><span class="details-title">Price per session: </span>{{ class.price | markdownify }}</p>
         </div>
     </div>
     {% endfor %}
