@@ -17,11 +17,11 @@ This page is updated on a regular basis - keep checking back to see what's new. 
         <h4 class="details-header">{{ class.start }} - {{ class.end }} - {{ class.name }}</h4>
         <div class="details-contents">
             <p><span class="details-title">Instructor: </span>{% if instructor.email %}<a href="mailto:{{ instructor.email }}">{{ instructor.name }}</a>{% else %}{{ instructor.name }}{% endif %}{% if instructor.phone %} - {{ instructor.phone }}{% endif %}</p>
-            <p><span class="details-title">Location: </span>{{ class.location }}<br /><a href="https://goo.gl/maps/{{ class.map_link }}" target="_blank">Google Maps link</a></p>
-            <p>
-                {{ class.description }}
-            </p>
-            <p><span class="details-title">Price per session: </span>{{ class.price }}</p>
+            <p><span class="details-title">Location: </span><a href="https://goo.gl/maps/{{ class.map_link }}" target="_blank" alt="Google Maps link">{{ class.location }}</a></p>
+            <div>
+                {{ class.description  | markdownify  }}
+            </div>
+            <p><span class="details-title">Price per session: </span>{{ class.price | markdownify | remove: '<p>' | remove: '</p>' }}</p>
         </div>
     </div>
     {% endfor %}
