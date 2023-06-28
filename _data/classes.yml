@@ -1,6 +1,6 @@
 - name: Monday
   classes:
-  - name: Chen Form Tai Chi
+  - name: Tai Chi
     start: '18:30'
     end: '20:00'
     instructor: marick
@@ -31,7 +31,7 @@
     price: £10 - discount for monthly payment ([details](/contact#marick))
 - name: Wednesday
   classes:
-  - name: Yang Form Tai Chi
+  - name: Tai Chi
     start: '19:00'
     end: '21:15'
     instructor: david
