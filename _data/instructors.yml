@@ -1,20 +1,83 @@
-david:
-  name: David Rutherford
-  email: david@bathtaichi.co.uk
-  phone: 07970 797 482
-  description: David is the chief instructor of Wutan for the Bath area and has been running classes for over 20 years.
-
-marick:
-  name: Marick Baxter
-  email: marickbaxter@hotmail.com
-  phone: 07881 646 633
+liu-yun-qiao:
+  name: Grand Master Liu Yun Qiao
   description: |
-    Marick runs Chen-style Tai Chi classes (including Hsing I) and all Kung Fu classes.
+    At the age of seven, Liu Yun Chiao (1909-1992) began his training with Li Su Wen (1864-
+    1934), perhaps the most famous practitioner of the six generations who were taught Pa Ze,
+    starting with Wu Chong (1712-1797). Liu would eventually become the head trainer to the
+    bodyguards for the president of China. Grand Master Liu Yun Qiao retired from his post in
+    1966 and founded the Wutan martial arts school. He chose 12 disciples, most of whom were
+    already highly skilled in martial arts, to teach them his skills. From this auspicious beginning,
+    the Wutan School now has masters and schools throughout the world.
+wu-song-fa:
+  name: Master Wu Song Fa
+  description: |
+    One of Grand Master Liu Yun Qiao&apos;s senior disciples, Wu Song Fa (d. 2018) trained with
+    Grand Master Liu Yun Qiao for many years before being accredited as having mastered the
+    arts of Wutan. Master Wu taught many disciples in Malaysia, and he also gave in-depth
+    training to 12 senior students in Wutan UK.
+they-soon-tuan:
+  name: Master They Soon Tuan
+  description: |
+    They Soon Tuan began learning the martial arts from his father by the age of seven,
+    practising five hours a day, and at the age of 15 was put in charge of his Crane Kung Fu
+    school. His Kung Fu master sent him to train under other teachers to learn different systems.
+    After many years of training, Master Wu Song Fa accepted They as his student. On arriving in
+    the UK to study at university, They founded a martial arts school here in 1977 to promote
+    the correct teaching of authentic Chinese martial arts (which are collectively known as
+    Wushu), and he was given permission by Grand Master Liu Yun Qiao to use the Wutan name
+    in 1986.
 
-    All of Marick's classes can be attended on a drop-in basis, or you can block-pay them in advance at the following rates:
+    Master They has held the role of Taolu Director of the British Council for Chinese Martial
+    Arts (BCCMA), instructing top athletes that include UK and international champions, and has
+    trained British Wushu teams. His Wutan UK school has brought many thousands of people to
+    greater health and happiness over more than four decades.
+david-rutherford:
+  name: David Rutherford
+  description: |
+    David was taught Tai Chi and Kung Fu by Andrew Carter, one of They&apos;s high-ranking senior
+    instructors in the [Wutan](#wutan) school. When Andrew introduced Wutan to Bath in 1991 - initially
+    with 5-hour sessions on Sunday afternoons - David completed the Tai Chi short form in 16
+    weeks and also began Sensing Hands, Pa Kua, a Stick routine and Wu-style Tai Chi.
 
-    * 1 class a week – £30 a month
-    * 2 Classes a week – £50 a month
-    * 3 classes a week – £60 a month
+    Andrew had to return to the Wutan UK headquarters in Southampton after a year. David
+    Rutherford, along with Steve Kruk and Martin Chivers, were determined to continue the
+    school&apos;s presence in Bath, so they travelled to Southampton on Sundays for training with
+    Master They Soon Taun, the head of Wutan UK. At Southampton, David continued his training
+    and also completed the 8 Palm Pa Kua sequence, Tai Chi Sword form and Broadsword form,
+    along with their applications. It is natural to try and emulate your teacher in order to maintain the
+    original &apos;message&apos;, and for years David has structured his class around Andrew&apos;s words and
+    methods.
+  contact:
+    email: david@bathtaichi.co.uk
+    phone: 07970 797 482
+    summary: David is the chief instructor for Wutan Bath and has been running [classes](/classes) for over 30 years.
+  prices: |
+    £10 on a drop-in basis.
 
-    He also runs private and group lessons by appointment.
+    There is a reduced rate if you are only interested in [Qigong](about/#qigong).
+marick-baxter:
+  name: Marick Baxter
+  description: |
+    From a young age, Marick has always been interested in the Chinese martial arts and the
+    philosophy behind it. Throughout childhood he suffered from poor health, and when he started
+    playing the flute, he realized that he needed to improve his health. He originally started to learn
+    martial arts to help his flute playing and develop his focus - but not only did his health improve
+    quickly, he discovered something much deeper in his inner being.
+
+    Marick began his Tai Chi training with David Rutherford and studied Kung Fu and Chinese
+    kickboxing under Martin Chivers at Wutan Bath in 1995. He trained wholeheartedly every hour he
+    could and was soon training with Master Wu Song Fa during his regular visits to the UK. After
+    Martin stopped teaching, Marick took on his Kung Fu classes and was invited to teach Tai Chi as
+    well. Marick is fully committed to spreading Wutan&apos;s teachings.
+  contact:
+    email: marickbaxter@hotmail.com
+    phone: 07881 646 633
+    summary: Marick runs Tai Chi [classes](/classes) and all Kung Fu [classes](/classes).
+  prices: |
+    £10 on a drop-in basis or monthly fees as follows:
+
+    * 1 class a week at £30 a month
+    * 2 Classes a week at £50 a month
+    * 3 classes a week at £60 a month
+
+    Marick is also available for private sessions and group lessons, available by appointment.
