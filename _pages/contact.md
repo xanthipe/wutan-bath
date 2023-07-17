@@ -12,13 +12,10 @@ the contact details below:
 {% for instructor_hash in site.data.instructors %}
 {% assign instructor = instructor_hash[1] %}
 {% if instructor.contact %}
-<article>
+<section>
     <h1 id="{{ instructor_hash[0]}}-contact">{{ instructor.name }}</h1>
     {% if instructor.contact.email %}<p><span class="details-title">Email: </span><a href="mailto:{{ instructor.contact.email }}">{{ instructor.contact.email }}</a></p>{% endif %}
     {% if instructor.contact.phone %}<p><span class="details-title">Phone:</span> <a href="tel:{{ instructor.contact.phone | remove: ' ' }}">{{ instructor.contact.phone }}</a></p>{% endif %}
-    <div>
-        {{ instructor.contact.summary | markdownify }}
-    </div>
-</article>
+</section>
 {% endif %}
 {% endfor %}

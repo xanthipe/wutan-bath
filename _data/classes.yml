@@ -16,12 +16,33 @@
       description: All levels of experience are welcome.
 - name: Tuesday
   classes:
+    - name: Kids' Kung Fu
+      start: "17:30"
+      end: "18:30"
+      instructor: james-davies
+      location: The Old Redhouse Farm Industrial Estate, Stratton on the Fosse, Radstock BA3 4QE
+      map_link: mkW51q6QJhk31Jz57
+      description: This Kung Fu class is catered for teaching children.
     - name: Kung Fu
       start: "18:30"
       end: "20:00"
       instructor: marick-baxter
       location: Central United Reformed Church, Frome Road, Bath BA2 2QN
       map_link: nyw3JWx1VNhMAH2z5
+      description: All levels of experience are welcome.
+    - name: Tai Chi
+      start: "18:30"
+      end: "20:00"
+      instructor: james-davies
+      location: The Old Redhouse Farm Industrial Estate, Stratton on the Fosse, Radstock BA3 4QE
+      map_link: mkW51q6QJhk31Jz57
+      description: All levels of experience are welcome.
+    - name: Kung Fu
+      start: "20:00"
+      end: "21:30"
+      instructor: james-davies
+      location: The Old Redhouse Farm Industrial Estate, Stratton on the Fosse, Radstock BA3 4QE
+      map_link: mkW51q6QJhk31Jz57
       description: All levels of experience are welcome.
 - name: Wednesday
   classes:
@@ -39,3 +60,37 @@
 
         Please contact David if you're interested in Qigong but are not ready to commit to learning
         Tai Chi.
+- name: Thursday
+  classes:
+    - name: Family Kung Fu
+      start: "10:00"
+      end: "11:00"
+      instructor: james-davies
+      location: The Old Redhouse Farm Industrial Estate, Stratton on the Fosse, Radstock BA3 4QE
+      map_link: mkW51q6QJhk31Jz57
+      description: This class caters to families who wish to learn Kung Fu together.
+- name: Friday
+  classes:
+    - name: Tai Chi
+      start: "7:30"
+      end: "8:30"
+      instructor: james-davies
+      location: Zen Rebel Studios, The Hollies 6A & B, Midsomer Norton, Radstock BA3 2DT
+      map_link: c7P96FJczN6bhh2G6
+      description: All levels of experience are welcome.
+- name: Saturday
+  classes:
+    - name: Tai Chi
+      start: "9:30"
+      end: "11:30"
+      instructor: james-davies
+      location: The Old Redhouse Farm Industrial Estate, Stratton on the Fosse, Radstock BA3 4QE
+      map_link: mkW51q6QJhk31Jz57
+      description: All levels of experience are welcome.
+    - name: Family Kung Fu
+      start: "11:00"
+      end: "12:30"
+      instructor: james-davies
+      location: The Old Redhouse Farm Industrial Estate, Stratton on the Fosse, Radstock BA3 4QE
+      map_link: mkW51q6QJhk31Jz57
+      description: This class caters to families who wish to learn Kung Fu together.
