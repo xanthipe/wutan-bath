@@ -6,7 +6,7 @@ permalink: /classes/
 
 # {{ page.title }}
 
-Bath Wutan offers [Tai Chi](about/#tai-chi) and [Kung Fu](about/#kung-fu) classes that start with [Qigong](about/#qigong). This page is
+Bath Wutan offers [Tai Chi](/about#tai-chi) and [Kung Fu](/about#kung-fu) classes that start with [Qigong](/about#qigong). This page is
 updated on a regular basis – keep checking back for the latest information. [Prices](#prices) are at the bottom of the page.
 
 {% for day in site.data.classes %}
