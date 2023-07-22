@@ -15,10 +15,10 @@ author: Wutan Bath
 description: Tai Chi and Kung Fu from the Wutan school in Bath, Bradford on Avon and Radstock
 
 # Header text
-header: "Control, discipline, flexibility, balance"
+header: For the body, mind and soul
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: /images/dragonphoenixbanner.png
+avatar: /assets/images/dragonphoenixbanner.png
 
 #
 # Flags below are optional
@@ -86,7 +86,7 @@ kramdown:
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  style: compressed # You might prefer to minify using :compressed
+  style: "compressed" # You might prefer to minify using :compressed
 
 # Use the following plug-ins
 plugins:

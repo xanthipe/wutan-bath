@@ -2,21 +2,35 @@
 layout: default
 ---
 
-<p>Control, discipline, flexibility, balance: learning a martial art teaches you all of these things in body, mind and
-  soul.</p>
+<p>Control, discipline, flexibility, balance and self-defence: learning a martial art teaches you all of these things in
+  body, mind and soul.</p>
 
-<p>With the Bath branch of Wutan, the UK's oldest traditional school of Chinese martial arts, you can learn different
-  arts such as Tai Chi and Kung Fu to suit your particular needs and focus.</p>
+<p>The Bath branch of <a href="{{site.baseurl}}/about#wutan">Wutan</a> &dash; a traditional school of Chinese martial
+  arts &dash; teaches different
+  martial arts such as <a href="{{site.baseurl}}/about#tai-chi">Tai Chi</a> (short for T&apos;ai Chi Ch&apos;uan) and <a
+    href="{{site.baseurl}}/about#kung-fu">Kung Fu</a>, along with <a href="{{site.baseurl}}/about#qigong">Qigong</a> (or
+  Chi
+  Kung) and some other forms that are suitable for everyone.</p>
 
-<p>Beginners are always welcome in any class, although there are some classes
-  specifically tailored to beginners. We also have some classes specifically for children.</p>
+<p>At <a href="{{site.baseurl}}/about#wutan-bath">Wutan Bath</a>, beginners are always welcome to any class, but there
+  are some <a href="{{site.baseurl}}/classes">classes</a> specifically tailored to
+  beginners.
+  <a href="{{site.baseurl}}/contact">Contact</a> the instructors for more information about when new beginner classes
+  will start.
+</p>
+
+<blockquote>
+  The first goal of Martial Arts training is to harmonize the body and spirit as one unit.
+  <br />
+  <span><i>Path of the Complete Martial Artist</i>, by They Soon Taun (Wutan Kung Fu International)</span>
+</blockquote>
 
 <div class="posts">
-  <h2>Latest news</h2>
+  <h3>Latest news</h3>
   {% for post in paginator.posts %}
   <article class="post">
     <a href="{{ site.baseurl }}{{ post.url }}">
-      <h3>{{ post.title }}</h3>
+      <h4>{{ post.title }}</h4>
 
       <div>
         <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
@@ -57,4 +71,5 @@ layout: default
     {% endif %}
   </div>
   {% endif %}
+  <a href="{{ site.baseurl }}/archive">News archive</a>
 </div>
