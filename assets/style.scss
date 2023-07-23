@@ -1,4 +1,5 @@
 ---
+title: CSS Stylesheet
 ---
 
 //
@@ -24,7 +25,7 @@ html {
 }
 
 body {
-  background-image: url('/assets/images/wutan_bg.webp');
+  background-image: url('images/wutan_bg.webp');
   background-color: $darkGreen;
   background-repeat: no-repeat;
   background-attachment: fixed;
