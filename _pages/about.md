@@ -23,8 +23,7 @@ permalink: /about/
 "It is Grand Master Liu who has given the light to my art,<br />
 It is Master Wu who has added a soul to my art,<br />
 It is you will give the life to my art."
-<br />
-<span><i>The Treasure of Mankind</i>, by They Soon Taun (Wutan UK)</span>
+<div><i>The Treasure of Mankind</i>, by They Soon Taun (Wutan UK)</div>
 </blockquote>
 
 {% for instructor_hash in site.data.instructors %}
