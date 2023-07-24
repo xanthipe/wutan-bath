@@ -5,8 +5,8 @@ layout: default
 <p>Control, discipline, flexibility, balance and self-defence: learning a martial art teaches you all of these things in
   body, mind and soul.</p>
 
-<p>The Bath branch of <a href="{{site.baseurl}}/about#wutan">Wutan</a> &dash; a traditional school of Chinese martial
-  arts &dash; teaches different
+<p>The Bath branch of <a href="{{site.baseurl}}/about#wutan">Wutan</a> &ndash; a traditional school of Chinese martial
+  arts &ndash; teaches different
   martial arts such as <a href="{{site.baseurl}}/about#tai-chi">Tai Chi</a> (short for T&apos;ai Chi Ch&apos;uan) and <a
     href="{{site.baseurl}}/about#kung-fu">Kung Fu</a>, along with <a href="{{site.baseurl}}/about#qigong">Qigong</a> (or
   Chi
@@ -22,8 +22,8 @@ layout: default
 <hr>
 
 <blockquote>
-  The first goal of Martial Arts training is to harmonize the body and spirit as one unit.
-  <div><i>Path of the Complete Martial Artist</i>, by They Soon Taun (Wutan Kung Fu International)</div>
+  &ldquo;The first goal of Martial Arts training is to harmonize the body and spirit as one unit.&rdquo;
+  <div><i>Path of the Complete Martial Artist</i>, by They Soon Tuan (Wutan Kung Fu International)</div>
 </blockquote>
 
 <hr>
@@ -33,11 +33,7 @@ layout: default
   {% for post in paginator.posts %}
   <article class="post">
     <a href="{{ site.baseurl }}{{ post.url }}">
-      <h4>{{ post.title }}</h4>
-
-      <div>
-        <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
-      </div>
+      <h4 class="post_date">{{ post.title }}<span> &ndash; {{ post.date | date: "%B %e, %Y" }}</span></h4>
     </a>
     <div class="entry">
       {{ post.excerpt }}

@@ -20,10 +20,10 @@ permalink: /about/
 <h1>Instructors</h1>
 
 <blockquote>
-"It is Grand Master Liu who has given the light to my art,<br />
+&ldquo;It is Grand Master Liu who has given the light to my art,<br />
 It is Master Wu who has added a soul to my art,<br />
-It is you will give the life to my art."
-<div><i>The Treasure of Mankind</i>, by They Soon Taun (Wutan UK)</div>
+It is you will give the life to my art.&rdquo;
+<div><i>The Treasure of Mankind</i>, by They Soon Tuan (Wutan UK)</div>
 </blockquote>
 
 {% for instructor_hash in site.data.instructors %}
