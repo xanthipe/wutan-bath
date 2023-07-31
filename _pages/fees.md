@@ -21,7 +21,7 @@ which includes insurance coverage.
 {% assign instructor = instructor_hash[1] %}
 {% if instructor.prices %}
 <article>
-    <h2 id="{{ instructor_hash[0]}}-fees">{{instructor.name | split: " " | first }}'s classes</h2>
+    <h3 id="{{ instructor_hash[0]}}-fees">{{instructor.name | split: " " | first }}'s classes</h3>
     <div>
         {{ instructor.prices | markdownify }}
     </div>
