@@ -4,16 +4,23 @@ title: Classes
 permalink: /classes/
 ---
 
+<div class="jump-menu" id="classes-jump-menu">
+{% for day in site.data.classes %}
+<a href="../classes/#{{ day.name | downcase }}">{{ day.name }}</a>
+{% endfor %}
+</div>
+
 # {{ page.title }}
 
-Bath Wutan offers [Tai Chi](/about#tai-chi) and [Kung Fu](/about#kung-fu) classes that start with [Qigong](/about#qigong). This page is
-updated on a regular basis – keep checking back for the latest information. [Prices](#prices) are at the bottom of the page.
+Bath Wutan offers [Tai Chi](/about/#tai-chi) and [Kung Fu](/about/#kung-fu) classes that start with [Qigong](/about/#qigong). This page is
+updated on a regular basis – keep checking back for the latest information.
 
 {% for day in site.data.classes %}
 <section>
-    <h2>{{ day.name }}</h2>
+    <h2 id="{{ day.name  | downcase }}">{{ day.name }}</h2>
     {% for class in day.classes %}
     {% assign instructor = site.data.instructors[class.instructor] %}
+    <div class="class-container">
         <h3>{{ class.start }} - {{ class.end }} - {{ class.name }}</h3>
         <p><span class="details-title">Instructor: </span>{% if instructor.contact.email %}<a href="mailto:{{ instructor.contact.email }}">{{ instructor.name }}</a>{% else %}{{ instructor.name }}{% endif %}</p>
         {% if instructor.contact.phone %}<p><span class="details-title">Phone:</span> <a href="tel:{{ instructor.contact.phone | remove: ' ' }}">{{ instructor.contact.phone }}</a></p>{% endif %}
@@ -21,25 +28,12 @@ updated on a regular basis – keep checking back for the latest information. [P
         <div>
             {{ class.description  | markdownify  }}
         </div>
-    {% endfor %}
-</section>
-{% endfor %}
-
-# Prices
-
-The first taster session is free.
-
-Please note that in addition to per session costs Wutan has an annual £20 membership fee,
-which includes insurance coverage.
-
-{% for instructor_hash in site.data.instructors %}
-{% assign instructor = instructor_hash[1] %}
-{% if instructor.prices %}
-<article>
-    <h2 id="{{ instructor_hash[0]}}-prices">{{instructor.name | split: " " | first }}'s classes</h2>
-    <div>
-        {{ instructor.prices | markdownify }}
     </div>
-</article>
-{% endif %}
+    {% endfor %}
+    <hr>
+    <a href="../classes/#classes-jump-menu">Top</a>
+    {% if forloop.last == false %}
+    <hr>
+    {% endif %}
+</section>
 {% endfor %}

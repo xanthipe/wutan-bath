@@ -9,7 +9,7 @@ title: News Archive
 <div id="archives">
   <section id="search">
     <div id="search-container">
-        <input type="text" id="search-input" placeholder="Search through the blog posts...">
+        <input type="text" id="search-input" placeholder="Search...">
         <ul id="results-container"></ul>
     </div>
 

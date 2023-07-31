@@ -42,12 +42,11 @@ body {
 }
 
 .container {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.80);
   margin: 0 auto;
   max-width: 740px;
   padding: 5px 30px;
   width: 100%;
-
 }
 
 h1,
@@ -83,7 +82,6 @@ h2 {
 }
 
 @media (min-width: 769px) {
-
   .post h2::before,
   .post h2::after {
     content: "";
@@ -98,10 +96,12 @@ h2 {
 
 h3 {
   font-size: 20px;
+  text-align: left;
 }
 
 h4 {
   font-size: 18px;
+  text-align: left;
   color: #222;
 }
 
@@ -150,13 +150,6 @@ table tr td :last-child {
   margin-bottom: 0;
 }
 
-/*.detailed .entry p:first-of-type:first-letter {
-    float: left;
-    margin: 0.13em 0.05em 0 -0.05em;
-    font-size: 3.333em;
-    line-height: 0.75em;
-}*/
-
 #search-container {
   text-align: center;
 }
@@ -173,45 +166,37 @@ table tr td :last-child {
   background-color: $lightGreen;
 }
 
-.share-box {
-  font-weight: bold;
-  color: #222;
-}
+.quote {
+  background-color: rgba($darkGreen, 50%);
+  width: 100%;
+  margin: 2rem 0;
 
-span[data-pullquote] {
-  display: block;
-
-  @include mobile {
-    display: none;
-  }
-}
-
-span[data-pullquote]:before {
-  content: attr(data-pullquote);
-  float: right;
-  width: 200px;
-  margin: 0 0 0.5em 30px;
-  padding: 0 -5% 0 0;
-  font-size: 1.3em;
-  font-style: italic;
-  color: $darkGreen;
-  text-align: center;
-}
-
-blockquote {
-  font-size: 1.3em;
-  font-style: italic;
-  color: $darkGreen;
-  text-align: center;
-  
-  div {
-    margin-top: 0.4rem;
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
-    line-height: 1.6rem;
-    font-style: normal;
-    color: #404040;
+  blockquote {
+    display: block;
+    color: $white;
     text-align: center;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin: 1rem auto;
+    padding: 0.5rem auto;
+    width: 50%;
+
+    @include mobile {
+      width: 100%;
+    }
+
+    cite {
+      margin-top: 0.4rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.7rem;
+      font-style: normal;
+      color: $lightGreen;
+      text-align: center;
+      ::before {
+        content: '\a';
+        white-space: pre;
+      }
+    }
   }
 }
 
@@ -425,15 +410,23 @@ nav {
 // .main
 //
 
-.posts>.post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
+.posts {
+  margin-top: 6rem;
+
+  & > .post:last-child {
+    padding-bottom: 1em;
+    border-bottom: none;
+  }
+
+  > .archive {
+    display: block;
+    margin-top: 2rem;
+  }
 }
 
 .post {
   blockquote {
     margin: 1.8em .8em;
-    /*border-left: 2px solid $gray;*/
     padding: 0.1em 1em;
     color: $gray;
     font-size: 22px;
@@ -468,6 +461,10 @@ nav {
 .wrapper-footer {
   bottom: 0;
   width: 100%;
+
+  .container {
+    background-color: rgba($darkGreen, 50%);
+  }
 }
 
 footer {
@@ -508,11 +505,11 @@ footer {
 .author_title {
   text-align: center;
   color: $darkGray;
-  letter-spacing: 2px;
 }
 
 .post_date {
   font-weight: normal;
+  font-style: italic;
 }
 
 /* --------------------------------
@@ -556,6 +553,14 @@ Modules - reusable parts of our design
   text-align: center;
 }
 
+.class-container {
+  margin-top: 2.5rem;
+
+  &:first-of-type {
+    margin-top: auto;
+  }
+}
+
 .gallery-wrapper {
   display: grid; 
   grid-auto-rows: auto; 
@@ -591,6 +596,20 @@ Modules - reusable parts of our design
   border: 1px solid black;
   background-color: white;
   text-align: center;
+}
+
+.jump-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba($darkGreen, 50%);
+
+  a {
+    display: block;
+    margin: 0 1rem;
+    color: $white;
+  }
 }
 
 @import "svg-icons";
