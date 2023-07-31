@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /archive/
-title: News Archive
+title: Archive
 ---
 
 # {{ page.title }}
@@ -25,7 +25,7 @@ title: News Archive
     </script>
   </section>
   <section>
-    <h4><a href="/categories">Search by post category</a></h4>
+    <h4><a href="/categories/">Search by post category</a></h4>
   </section>
   <section id="archive">
      <h3>Most Recent Posts</h3>

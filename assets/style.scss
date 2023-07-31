@@ -603,7 +603,9 @@ Modules - reusable parts of our design
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   background-color: rgba($darkGreen, 50%);
+  width: 100%;
 
   a {
     display: block;

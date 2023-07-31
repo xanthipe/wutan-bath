@@ -9,7 +9,7 @@ title: Categories
 <div id="archives">
 
   <section>
-      <h4><a href="/archive">Search by post date</a></h4>
+      <h4><a href="/archive/">Search by post date</a></h4>
   </section>
 {% for category in site.categories %}
   <div class="archive-group">
