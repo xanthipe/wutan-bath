@@ -19,7 +19,7 @@ the contact details below:
 {% assign instructor = instructor_hash[1] %}
 {% if instructor.contact %}
 <section>
-    <h1 id="{{ instructor_hash[0]}}-contact">{{ instructor.name }}</h1>
+    <h3 id="{{ instructor_hash[0]}}-contact">{{ instructor.name }}</h3>
     {% if instructor.contact.email %}<p><span class="details-title">Email: </span><a href="mailto:{{ instructor.contact.email }}">{{ instructor.contact.email }}</a></p>{% endif %}
     {% if instructor.contact.phone %}<p><span class="details-title">Phone:</span> <a href="tel:{{ instructor.contact.phone | remove: ' ' }}">{{ instructor.contact.phone }}</a></p>{% endif %}
 </section>
