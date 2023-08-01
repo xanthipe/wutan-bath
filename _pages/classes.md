@@ -4,7 +4,7 @@ title: Classes
 permalink: /classes/
 ---
 
-<div class="jump-menu" id="classes-jump-menu">
+<div class="jump-menu">
 {% for day in site.data.classes %}
 <a href="../classes/#{{ day.name | downcase }}">{{ day.name }}</a>
 {% endfor %}
@@ -31,7 +31,7 @@ updated on a regular basis – keep checking back for the latest information.
     </div>
     {% endfor %}
     <hr>
-    <a href="../classes/#classes-jump-menu">Top</a>
+    <a href="../classes/#top">Top</a>
     {% if forloop.last == false %}
     <hr>
     {% endif %}

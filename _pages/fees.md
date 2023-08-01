@@ -4,7 +4,7 @@ title: Fees
 permalink: /fees/
 ---
 
-<div class="jump-menu" id="fees-jump-menu">
+<div class="jump-menu">
 {% for instructors_hash in site.data.instructors %}
 <a href="../fees/#{{ instructors_hash[0] }}-fees">{{ instructors_hash[1].name | split: " " | first }}'s classes</a>
 {% endfor %}
@@ -27,7 +27,7 @@ which includes insurance coverage.
     </div>
 </article>
 <hr>
-<a href="../fees/#fees-jump-menu">Top</a>
+<a href="../fees/#top">Top</a>
 {% if forloop.last == false %}
 <hr>
 {% endif %}

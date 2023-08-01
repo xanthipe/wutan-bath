@@ -178,7 +178,7 @@ table tr td :last-child {
     font-size: 0.9rem;
     font-style: italic;
     margin: 1rem auto;
-    padding: 0.5rem auto;
+    padding: 1rem 0.5rem;
     width: 50%;
 
     @include mobile {
@@ -344,12 +344,12 @@ p>img {
 }
 
 .site-info hr {
-  margin: 0 1rem 1rem 1rem;
+  margin: 1rem 0 -0.5rem;
   border-color: $darkGray;
 }
 
 .site-name {
-  margin: 1rem 0 0 0;
+  margin: 1.5rem 0 0 0;
   color: $darkGray;
   cursor: pointer;
   font-family: $helveticaNeue;
@@ -365,7 +365,6 @@ p>img {
 }
 
 .site-description {
-  margin: -10px 0 0 6px;
   color: $black;
   font-size: 18px;
   text-align: center;
@@ -612,6 +611,18 @@ Modules - reusable parts of our design
     margin: 0 1rem;
     color: $white;
   }
+}
+
+img[src$="#left"] {
+  float: left;
+  margin: 0.5rem 1rem 1rem 0;
+  max-width: 10rem;
+}
+
+img[src$="#right"] {
+  float: right;
+  margin: 0.5rem 0 1rem 1rem;
+  max-width: 10rem;
 }
 
 @import "svg-icons";

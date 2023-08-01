@@ -4,7 +4,7 @@ title: Contact
 permalink: /contact/
 ---
 
-<div class="jump-menu" id="contact-jump-menu">
+<div class="jump-menu">
 {% for instructors_hash in site.data.instructors %}
 <a href="../contact/#{{ instructors_hash[0] }}-contact">{{ instructors_hash[1].name }}</a>
 {% endfor %}
@@ -24,7 +24,7 @@ the contact details below:
     {% if instructor.contact.phone %}<p><span class="details-title">Phone:</span> <a href="tel:{{ instructor.contact.phone | remove: ' ' }}">{{ instructor.contact.phone }}</a></p>{% endif %}
 </section>
 <hr>
-<a href="../contact/#contact-jump-menu">Top</a>
+<a href="../contact/#top">Top</a>
 {% if forloop.last == false %}
 <hr>
 {% endif %}

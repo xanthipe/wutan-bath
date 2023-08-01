@@ -2,38 +2,17 @@
 layout: default
 ---
 
-<p>Control, discipline, flexibility, balance and self-defence: learning a martial art teaches you all of these things in
-  body, mind and soul.</p>
+{{ site.data.introduction.text | markdownify }}
 
-<p>The Bath branch of <a href="{{site.baseurl}}/about/#wutan">Wutan</a> &ndash; a traditional school of Chinese martial
-  arts &ndash; teaches different
-  martial arts such as <a href="{{site.baseurl}}/about/#tai-chi">Tai Chi</a> (short for T&apos;ai Chi Ch&apos;uan) and
-  <a href="{{site.baseurl}}/about/#kung-fu">Kung Fu</a>, along with <a href="{{site.baseurl}}/about/#qigong">Qigong</a>
-  (or
-  Chi
-  Kung) and some other forms that are suitable for everyone.
-</p>
-
-<p>At <a href="{{site.baseurl}}/about/#wutan-bath">Wutan Bath</a>, beginners are always welcome to any class, but there
-  are some <a href="{{site.baseurl}}/classes/">classes</a> specifically tailored to
-  beginners.
-  <a href="{{site.baseurl}}/contact/">Contact</a> the instructors for more information about when new beginner classes
-  will start.
-</p>
-
-<div class="quote">
-  <blockquote>
-    &ldquo;The first goal of Martial Arts training is to harmonize the body and spirit as one unit.&rdquo;
-    <cite><i>Path of the Complete Martial Artist</i>, by They Soon Tuan (Wutan Kung Fu International)</cite>
-  </blockquote>
-</div>
+{% include quote.html quote="The first goal of Martial Arts training is to harmonize the body and spirit as one unit."
+source="Path of the Complete Martial Artist" author="They Soon Tuan <br /> (Wutan Kung Fu International)" %}
 
 <div class="posts">
   <h3>Latest news</h3>
   {% for post in paginator.posts %}
   <article class="post">
     <a href="{{ site.baseurl }}{{ post.url }}">
-      <h4 class="post_date">{{ post.title }}<span> &ndash; {{ post.date | date: "%B %e, %Y" }}</span></h4>
+      <h4 class="post_date">{{ post.title }}<span> &ndash; {{ post.date | date_to_string: "ordinal", "GB" }}</span></h4>
     </a>
     <div class="entry">
       {{ post.excerpt }}
