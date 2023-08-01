@@ -12,9 +12,7 @@ permalink: /contact/
 
 # {{ page.title }}
 
-We have a [mailing list](https://landing.mailerlite.com/webforms/landing/{{ site.footer-links.mailerlite }}) and various social accounts for keeping in touch with the club - just click on the links at the bottom of the page.
-
-If you wish to contact our instructors directly, either send us a message via Facebook or see the contact details below.
+{{ site.data.page.contact | markdownify }}
 
 {% for instructor_hash in site.data.instructors %}
 {% assign instructor = instructor_hash[1] %}

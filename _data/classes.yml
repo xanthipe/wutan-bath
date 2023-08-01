@@ -46,6 +46,30 @@
       description: All levels of experience are welcome.
 - name: Wednesday
   classes:
+    - name: Tai Chi (term time)
+      start: "09:30"
+      end: "10:30"
+      instructor: siobhan-colvert
+      location: Bradford on Avon Youth and Community Centre, Frome Rd, BA15 1LT
+      map_link: sY2oj7hLn2yxLuQW6
+      description: |
+        This class is for beginners.
+    - name: Tai Chi (term time)
+      start: "10:30"
+      end: "11:30"
+      instructor: siobhan-colvert
+      location: Bradford on Avon Youth and Community Centre, Frome Rd, BA15 1LT
+      map_link: sY2oj7hLn2yxLuQW6
+      description: |
+        This class is for students at an intermediate level.
+    - name: Tai Chi (term time)
+      start: "10:30"
+      end: "12:00"
+      instructor: siobhan-colvert
+      location: Bradford on Avon Youth and Community Centre, Frome Rd, BA15 1LT
+      map_link: sY2oj7hLn2yxLuQW6
+      description: |
+        This class is suitable for advanced students.
     - name: Tai Chi
       start: "19:00"
       end: "21:15"

@@ -12,10 +12,7 @@ permalink: /fees/
 
 # Fees
 
-The first taster session is free.
-
-Please note that in addition to per session costs Wutan has an annual £20 membership fee,
-which includes insurance coverage.
+{{ site.data.page.fees | markdownify }}
 
 {% for instructor_hash in site.data.instructors %}
 {% assign instructor = instructor_hash[1] %}

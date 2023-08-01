@@ -12,8 +12,7 @@ permalink: /classes/
 
 # {{ page.title }}
 
-Bath Wutan offers [Tai Chi](../arts/#tai-chi) and [Kung Fu](../arts/#kung-fu) classes that start with [Qigong](../arts/#qigong). This page is
-updated on a regular basis – keep checking back for the latest information.
+{{ site.data.page.classes | markdownify }}
 
 {% for day in site.data.classes %}
 <section>

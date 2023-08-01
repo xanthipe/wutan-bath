@@ -336,11 +336,10 @@ nav {
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
   background-color: $white;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 2rem;
   border-top: 1px $gray solid;
   border-bottom: 1px $gray solid;
 
@@ -355,14 +354,14 @@ nav {
   }
 
   a {
-    margin-left: 20px;
     color: $darkGray;
-    text-align: right;
+    text-align: center;
     font-weight: 300;
     letter-spacing: 1px;
+    padding: 0 0.3rem;
 
     @include mobile {
-      margin: 0 10px;
+      padding: 0 0.8rem;
     }
   }
 }
@@ -482,15 +481,30 @@ Modules - reusable parts of our design
 .post-tags {
   text-align: center;
   line-height: 35px;
-}
 
-.post-tags a {
-  font-size: 14.5px;
-  padding: 2px 13px;
-  border: none;
-  background-color: #4CAF50;
-  border-radius: 50px;
-  color: #fff;
+  a {
+      font-size: 14.5px;
+      padding: 2px 13px;
+      border: none;
+      border-radius: 50px;
+      color: #fff;
+
+      &[data-category="Site"] {
+        background-color: #4CAF50;
+      }
+
+      &[data-category="Classes"] {
+        background-color: #1825bc;
+      }
+
+      &[data-category="Journey"] {
+        background-color: #5b0606;
+      }
+
+      &[data-category="History"] {
+        background-color: #5b099a;
+      }
+    }
 }
 
 .pagination a,
