@@ -8,9 +8,11 @@ permalink: /gallery/
 
 <div class="gallery-wrapper">
 {% for photo in site.data.photos %}
-<div class="gallery-item">
-    <img src="{{ site.baseurl }}/assets/photos/gallery/{{photo.name}}" alt="{{photo.description}}">
-    <p>{{photo.description}}</p>
-</div>
+<figure class="gallery-item">
+    <div class="gallery-image-bg">
+        <img src="{{ site.baseurl }}/assets/photos/gallery/{{photo.name}}" alt="{{photo.description}}">
+    </div>
+    <figcaption>{{photo.description}}</figcaption>
+</figure>
 {% endfor %}
 </div>

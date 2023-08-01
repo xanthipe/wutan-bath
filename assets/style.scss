@@ -82,6 +82,7 @@ h2 {
 }
 
 @media (min-width: 769px) {
+
   .post h2::before,
   .post h2::after {
     content: "";
@@ -110,46 +111,6 @@ p {
   text-align: justify;
 }
 
-table {
-  padding: 0;
-}
-
-table tr {
-  border-top: 1px solid #cccccc;
-  background-color: white;
-  margin: 0;
-  padding: 0;
-}
-
-table tr:nth-child(2n) {
-  background-color: #f8f8f8;
-}
-
-table tr th {
-  font-weight: bold;
-  border: 1px solid #cccccc;
-  text-align: left;
-  margin: 0;
-  padding: 6px 13px;
-}
-
-table tr td {
-  border: 1px solid #cccccc;
-  text-align: left;
-  margin: 0;
-  padding: 6px 13px;
-}
-
-table tr th :first-child,
-table tr td :first-child {
-  margin-top: 0;
-}
-
-table tr th :last-child,
-table tr td :last-child {
-  margin-bottom: 0;
-}
-
 #search-container {
   text-align: center;
 }
@@ -159,7 +120,7 @@ table tr td :last-child {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid $lightGray;
   border-radius: 4px;
   box-sizing: border-box;
   font-size: 18px;
@@ -192,6 +153,7 @@ table tr td :last-child {
       font-style: normal;
       color: $lightGreen;
       text-align: center;
+
       ::before {
         content: '\a';
         white-space: pre;
@@ -315,7 +277,7 @@ p>img {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
+
   @include mobile {
     flex-direction: column;
   }
@@ -329,12 +291,12 @@ p>img {
   @include mobile {
     display: block;
     margin: 0 auto;
-  }  
+  }
 
   img {
     border-radius: 5px;
-  }  
-}  
+  }
+}
 
 .site-info {
   @include mobile {
@@ -412,12 +374,12 @@ nav {
 .posts {
   margin-top: 6rem;
 
-  & > .post:last-child {
+  &>.post:last-child {
     padding-bottom: 1em;
     border-bottom: none;
   }
 
-  > .archive {
+  >.archive {
     display: block;
     margin-top: 2rem;
   }
@@ -561,17 +523,17 @@ Modules - reusable parts of our design
 }
 
 .gallery-wrapper {
-  display: grid; 
-  grid-auto-rows: auto; 
-  grid-template-columns: 1fr; 
-  gap: 1em 1em; 
-  justify-content: space-evenly; 
-  align-content: space-evenly; 
-  justify-items: center; 
-  align-items: center; 
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: 1fr;
+  gap: 1em 1em;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  justify-items: center;
+  align-items: center;
 
   @media (min-width: 800px) {
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
   }
 
   .gallery-item {
@@ -579,6 +541,25 @@ Modules - reusable parts of our design
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    height: 100%;
+
+    .gallery-image-bg {
+      display: flex;
+      height: 20rem;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba($darkGreen, 50%);
+
+      img {
+        max-height: 20rem;
+      }
+    }
+
+    figcaption {
+      text-align: center;
+    }
   }
 }
 
