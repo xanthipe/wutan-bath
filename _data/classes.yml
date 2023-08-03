@@ -1,44 +1,120 @@
 - name: Monday
   classes:
-  - name: Tai Chi
-    start: '18:30'
-    end: '20:00'
-    instructor: marick
-    location: 'Central United Reformed Church, Frome Road'
-    map_link: nyw3JWx1VNhMAH2z5
-    description: This is an ongoing class practicing Qigong, Ba Gua, Hsing I, weapon forms
-        and the Chen-style short Tai Chi form. All levels of experience are welcome.
-    price: £10 - discount for monthly payment ([details](/contact#marick))
-  - name: Kung Fu
-    start: '20:00'
-    end: '21:30'
-    instructor: marick
-    location: 'Rush Hill United Reformed Church, Frome Road'
-    map_link: nyw3JWx1VNhMAH2z5
-    description: This is an ongoing class practicing Wing Chun Preying Mantis style,
-        Chai Lei Fut and Chinese Kickboxing. All levels of experience are welcome.
-    price: £10 - discount for monthly payment ([details](/contact#marick))
+    - name: Tai Chi
+      start: "18:30"
+      end: "20:00"
+      instructor: marick-baxter
+      location: Central United Reformed Church, Frome Road, Bath BA2 2QN
+      map_link: nyw3JWx1VNhMAH2z5
+      description: All levels of experience are welcome.
+    - name: Kung Fu
+      start: "20:00"
+      end: "21:30"
+      instructor: marick-baxter
+      location: Central United Reformed Church, Frome Road, Bath BA2 2QN
+      map_link: nyw3JWx1VNhMAH2z5
+      description: All levels of experience are welcome.
 - name: Tuesday
   classes:
-  - name: Kung Fu
-    start: '18:30'
-    end: '20:00'
-    instructor: marick
-    location: 'Rush Hill United Reformed Church, Frome Road'
-    map_link: nyw3JWx1VNhMAH2z5
-    description: This is an ongoing class practicing Wing Chun Preying Mantis style,
-        Chai Lei Fut and Chinese Kickboxing. All levels of experience are welcome.
-    price: £10 - discount for monthly payment ([details](/contact#marick))
+    - name: Kids' Kung Fu
+      start: "17:30"
+      end: "18:30"
+      instructor: james-davies
+      location: The Old Redhouse Farm Industrial Estate, Stratton on the Fosse, Radstock BA3 4QE
+      map_link: mkW51q6QJhk31Jz57
+      description: This Kung Fu class caters for teaching children.
+    - name: Kung Fu
+      start: "18:30"
+      end: "20:00"
+      instructor: marick-baxter
+      location: Central United Reformed Church, Frome Road, Bath BA2 2QN
+      map_link: nyw3JWx1VNhMAH2z5
+      description: All levels of experience are welcome.
+    - name: Tai Chi
+      start: "18:30"
+      end: "20:00"
+      instructor: james-davies
+      location: The Old Redhouse Farm Industrial Estate, Stratton on the Fosse, Radstock BA3 4QE
+      map_link: mkW51q6QJhk31Jz57
+      description: All levels of experience are welcome.
+    - name: Kung Fu
+      start: "20:00"
+      end: "21:30"
+      instructor: james-davies
+      location: The Old Redhouse Farm Industrial Estate, Stratton on the Fosse, Radstock BA3 4QE
+      map_link: mkW51q6QJhk31Jz57
+      description: All levels of experience are welcome.
 - name: Wednesday
   classes:
-  - name: Tai Chi
-    start: '19:00'
-    end: '21:15'
-    instructor: david
-    location: 'Hayesfield Lower School, Brougham Hayes'
-    map_link: yHmXikrBBTaLc1Cn9
-    description: This is an ongoing class practicing Qigong followed by miscellaneous
-        training (Bagua, sensing hands etc.) and finishing with the Yang-style
+    - name: Tai Chi (term time)
+      start: "09:30"
+      end: "10:30"
+      instructor: siobhan-colvert
+      location: Bradford on Avon Youth and Community Centre, Frome Rd, BA15 1LT
+      map_link: sY2oj7hLn2yxLuQW6
+      description: |
+        This class is for beginners.
+    - name: Tai Chi (term time)
+      start: "10:30"
+      end: "11:30"
+      instructor: siobhan-colvert
+      location: Bradford on Avon Youth and Community Centre, Frome Rd, BA15 1LT
+      map_link: sY2oj7hLn2yxLuQW6
+      description: |
+        This class is for students at an intermediate level.
+    - name: Tai Chi (term time)
+      start: "10:30"
+      end: "12:00"
+      instructor: siobhan-colvert
+      location: Bradford on Avon Youth and Community Centre, Frome Rd, BA15 1LT
+      map_link: sY2oj7hLn2yxLuQW6
+      description: |
+        This class is suitable for advanced students.
+    - name: Tai Chi
+      start: "19:00"
+      end: "21:15"
+      instructor: david-rutherford
+      location: Hayesfield Lower School, Brougham Hayes, Bath BA2 3QX
+      map_link: yHmXikrBBTaLc1Cn9
+      description: |
+        This is an ongoing class practicing Qigong followed by miscellaneous
+        training (Pa Gua, sensing hands etc.) and finishing with the Yang-style
         short form. All levels of experience are welcome, but please contact David
-        to check for specific beginner sessions.
-    price: £10
+        for information on specific beginner sessions.
+
+        Please contact David if you're interested in Qigong but are not ready to commit to learning
+        Tai Chi.
+- name: Thursday
+  classes:
+    - name: Family Kung Fu
+      start: "10:00"
+      end: "11:00"
+      instructor: james-davies
+      location: The Old Redhouse Farm Industrial Estate, Stratton on the Fosse, Radstock BA3 4QE
+      map_link: mkW51q6QJhk31Jz57
+      description: This class caters to families who wish to learn Kung Fu together.
+- name: Friday
+  classes:
+    - name: Tai Chi
+      start: "7:30"
+      end: "8:30"
+      instructor: james-davies
+      location: Zen Rebel Studios, The Hollies 6A & B, Midsomer Norton, Radstock BA3 2DT
+      map_link: c7P96FJczN6bhh2G6
+      description: All levels of experience are welcome.
+- name: Saturday
+  classes:
+    - name: Tai Chi
+      start: "9:30"
+      end: "11:30"
+      instructor: james-davies
+      location: The Old Redhouse Farm Industrial Estate, Stratton on the Fosse, Radstock BA3 4QE
+      map_link: mkW51q6QJhk31Jz57
+      description: All levels of experience are welcome.
+    - name: Family Kung Fu
+      start: "11:00"
+      end: "12:30"
+      instructor: james-davies
+      location: The Old Redhouse Farm Industrial Estate, Stratton on the Fosse, Radstock BA3 4QE
+      map_link: mkW51q6QJhk31Jz57
+      description: This class caters to families who wish to learn Kung Fu together.

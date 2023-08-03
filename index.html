@@ -2,31 +2,23 @@
 layout: default
 ---
 
-<p>Control, discipline, flexibility, balance: learning a martial art teaches you all of these things in body, mind and
-  soul.</p>
+{{ site.data.page.introduction | markdownify }}
 
-<p>With the Bath branch of Wutan, the UK's oldest traditional school of Chinese martial arts, you can learn different
-  arts such as Tai Chi and Kung Fu to suit your particular needs and focus.</p>
-
-<p>Beginners are always welcome in any class, although there are some classes
-  specifically tailored to beginners. We also have some classes specifically for children.</p>
+{% include quote.html quote="The first goal of Martial Arts training is to harmonize the body and spirit as one unit."
+source="Path of the Complete Martial Artist" author="They Soon Tuan <br /> (Wutan Kung Fu International)" %}
 
 <div class="posts">
-  <h2>Latest news</h2>
+  <h3>Latest news</h3>
   {% for post in paginator.posts %}
   <article class="post">
-    <a href="{{ site.baseurl }}{{ post.url }}">
-      <h3>{{ post.title }}</h3>
-
-      <div>
-        <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
-      </div>
+    <a href="{{ post.url | relative_url }}">
+      <h4 class="post_date">{{ post.title }}<span> &ndash; {{ post.date | date_to_string: "ordinal", "GB" }}</span></h4>
     </a>
     <div class="entry">
       {{ post.excerpt }}
     </div>
 
-    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    <a href="{{ post.url | relative_url }}" class="read-more">Read More</a>
   </article>
   {% endfor %}
 
@@ -57,4 +49,5 @@ layout: default
     {% endif %}
   </div>
   {% endif %}
+  <a class="archive" href="{{ '/archive/' | relative_url }}">Archive</a>
 </div>

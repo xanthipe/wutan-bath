@@ -1,20 +1,95 @@
-david:
+david-rutherford:
   name: David Rutherford
-  email: david@bathtaichi.co.uk
-  phone: 07970 797 482
-  description: David is the chief instructor of Wutan for the Bath area and has been running classes for over 20 years.
-
-marick:
-  name: Marick Baxter
-  email: marickbaxter@hotmail.com
-  phone: 07881 646 633
   description: |
-    Marick runs Chen-style Tai Chi classes (including Hsing I) and all Kung Fu classes.
+    David was taught Tai Chi and Kung Fu by Andrew Carter, one of They&apos;s high-ranking senior
+    instructors in the [Wutan](../school/#wutan) school. When Andrew introduced Wutan to Bath in 1991 &ndash; initially
+    with 5-hour sessions on Sunday afternoons &ndash; David completed the Tai Chi short form in 16
+    weeks and also began Sensing Hands, Pa Gua, a Stick routine and Wu-style Tai Chi.
 
-    All of Marick's classes can be attended on a drop-in basis, or you can block-pay them in advance at the following rates:
+    Andrew had to return to the Wutan UK headquarters in Southampton after a year. David
+    Rutherford, along with Steve Kruk and Martin Chivers, were determined to continue the
+    school&apos;s presence in Bath, so they travelled to Southampton on Sundays for training with
+    Mr They Soon Tuan, the head of Wutan UK. At Southampton, David continued his training
+    and also completed the 8 Palm Pa Gua sequence, Tai Chi Sword form and Broadsword form,
+    along with their applications. It is natural to try and emulate your teacher in order to maintain the
+    original &lsquo;message&rsquo;, and for years David has structured his class around Andrew&apos;s words and
+    methods.
+  contact:
+    email: david@bathtaichi.co.uk
+    phone: 07970 797 482
+  prices: |
+    £10 on a drop-in basis.
 
-    * 1 class a week – £30 a month
-    * 2 Classes a week – £50 a month
-    * 3 classes a week – £60 a month
+    There is a reduced rate if you are only interested in [Qigong](../arts/#qigong).
+marick-baxter:
+  name: Marick Baxter
+  description: |
+    From a young age, Marick has always been interested in the Chinese martial arts and the
+    philosophy behind it. Throughout childhood he suffered from poor health, and when he started
+    playing the flute, he realized that he needed to improve his health. He originally started to learn
+    martial arts to help his flute playing and develop his focus &ndash; but not only did his health improve
+    quickly, he discovered something much deeper in his inner being.
 
-    He also runs private and group lessons by appointment.
+    Marick began his Tai Chi training with David Rutherford and studied Kung Fu and Chinese
+    kickboxing under Martin Chivers at Wutan Bath in 1995. He trained wholeheartedly every hour he
+    could and was soon training with Master Wu Song Fa during his regular visits to the UK. After
+    Martin stopped teaching, Marick took on his Kung Fu classes and was invited to teach Tai Chi as
+    well. Marick is fully committed to spreading Wutan&apos;s teachings.
+  contact:
+    email: marickbaxter@hotmail.com
+    phone: 07881 646 633
+  prices: |
+    £10 on a drop-in basis or monthly fees as follows:
+
+    * 1 class a week at £30 a month
+    * 2 classes a week at £50 a month
+    * 3 classes a week at £60 a month
+
+    Marick is also available for private sessions and group lessons, available by appointment.
+james-davies:
+  name: James Davies
+  description: |
+    After doing Yoga for 7 years, James felt he wanted something more active to compliment the progress he 
+    had made with Yoga. He also needed to find a way of looking after himself physically to help his recovery 
+    from various injuries. He started with Kung Fu and Kickboxing. He then went to Tai Chi as a kind of 
+    &lsquo;why not?&rsquo;. He didn't expect it to offer anything different to Yoga and Kung Fu, but not only did he find 
+    that Tai Chi complimented both of them beautifully, it also has much to add. While he has benefited greatly 
+    physically, the emotional and psychological well-being he has experienced have been life changing, and he 
+    has made many friends and great memories along the way. 
+
+    James feels honoured to be teaching for the Wutan school. He feels traditional Chinese martial arts are 
+    truly a treasure that can really help our collective future. He is joined by his partner in teaching his 
+    classes and is proud that their children are all still actively training and assist them with teaching. 
+    He will always be grateful for the day he joined Wutan and believes that training in Tai Chi, Kung Fu and 
+    Kickboxing with Wutan for the last 20 or so years has provided him with so much.
+  contact:
+    email: huck_finn@hotmail.co.uk
+    phone: 07811 084 673
+  prices: |
+    For adults:
+    * 1 class a week at £40 a month
+    * 2 or more classes a week at £50 a month
+
+    For children:
+    * 1 class a week at £20 a month
+    * 2 classes a week at £25 a month
+
+    Concessions are available.
+siobhan-colvert:
+  name: Siobhan Colvert
+  description: |
+    Siobhan started her training with the Bath branch of the Wutan school in 1997 and soon realised the amazing benefits for mind, 
+    body and inner well-being. What started as a once-a-week class as a hobby soon turned into many hours of dedicated and fun 
+    training, with life changing effects, under the guidance of They Soon Tuan and Master Wu Song Fa. After being asked to teach by 
+    They, Siobhan began a journey of instructor training and personal development within the arts.
+
+    The comprehensive and progressive syllabus of the school gives a great foundation and a lifetime worth of knowledge to students,
+    whether they prefer a short course or on-going training. Over many years of teaching, Siobhan has seen students benefitting 
+    profoundly, in so many ways, and finds it to be a rewarding experience and a privilege to be part of her students&apos; journey
+    and development. Siobhan feels honoured and grateful to be able to share such a gift benefitting students, herself and our wider 
+    communities.
+  contact:
+    email: siobhancolvert@hotmail.com
+    phone: 07966 434 263
+  prices: |
+    Contact Siobhan for details.

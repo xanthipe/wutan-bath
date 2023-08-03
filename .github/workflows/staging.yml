@@ -1,0 +1,41 @@
+name: Deploy to staging server
+
+on:
+  push:
+    branches: ["develop"]
+
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    environment: staging
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+          cache-version: 0 # Increment this number if you need to re-download cached gems
+      - name: Build with Jekyll
+        run: bundle exec jekyll build --baseurl "~wutan" --drafts
+        env:
+          JEKYLL_ENV: staging
+      - name: Deploy to server
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          source: "./_site/*"
+          target: public_html
+          overwrite: true
+          strip_components: 1
+

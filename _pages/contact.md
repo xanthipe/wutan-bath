@@ -4,24 +4,28 @@ title: Contact
 permalink: /contact/
 ---
 
+<div class="jump-menu">
+{% for instructors_hash in site.data.instructors %}
+<a href="../contact/#{{ instructors_hash[0] }}-contact">{{ instructors_hash[1].name }}</a>
+{% endfor %}
+</div>
+
 # {{ page.title }}
 
-We have a [mailing list](https://landing.mailerlite.com/webforms/landing/{{ site.footer-links.mailerlite }}) and various social accounts for keeping in touch with the club - just check out the links at the bottom of the page.
-
-If you want to get in contact more directly, either send us a message via Facebook or get in touch with the appropriate instructor.
-
-## Instructors
+{{ site.data.page.contact | markdownify }}
 
 {% for instructor_hash in site.data.instructors %}
 {% assign instructor = instructor_hash[1] %}
-<div class="details-block" id="{{ instructor_hash[0] }}">
-  <h4 class="details-header">{{ instructor.name }}</h4>
-  <div class="details-contents">
-    <p><span class="details-title">Email: </span>{% if instructor.email %}<a href="mailto:{{ instructor.email }}">{{ instructor.email }}</a>{% else %}N/A{% endif %}</p>
-    <p><span class="details-title">Phone: </span>{{ instructor.phone }}</p>
-    <div>
-      {{ instructor.description | markdownify }}
-    </div>
-  </div>
-</div>
+{% if instructor.contact %}
+<section>
+    <h3 id="{{ instructor_hash[0]}}-contact">{{ instructor.name }}</h3>
+    {% if instructor.contact.email %}<p><span class="details-title">Email: </span><a href="mailto:{{ instructor.contact.email }}">{{ instructor.contact.email }}</a></p>{% endif %}
+    {% if instructor.contact.phone %}<p><span class="details-title">Phone:</span> <a href="tel:{{ instructor.contact.phone | remove: ' ' }}">{{ instructor.contact.phone }}</a></p>{% endif %}
+</section>
+<hr>
+<a href="../contact/#top">Top</a>
+{% if forloop.last == false %}
+<hr>
+{% endif %}
+{% endif %}
 {% endfor %}

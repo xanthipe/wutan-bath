@@ -2,38 +2,61 @@
 <html>
 
 <head>
-  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }} – {{ site.description }}</title>
+  <title>{% if page.title %}{{ page.title }} &ndash; {% endif %}{{ site.title }} &ndash; {{ site.description }}</title>
   {% seo title=false %}
   {% include meta.html %}
+  {% if jekyll.environment == 'staging' %}
+  <meta name="robots" content="noindex" />
+  {% endif %}
 
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/style.css" />
+  <link rel="stylesheet" type="text/css" href="{{ '/assets/style.css' | relative_url }}" />
   <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}"
-    href="{{ site.baseurl }}/feed.xml" />
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    href="{{ '/feed.xml' | relative_url }}" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url | relative_url }}" />
 
   <meta name="theme-color" content="#000000">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/wutan_logo.svg' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/images/wutan_logo.svg' | relative_url }}">
 </head>
 
 <body>
   <div class="wrapper-container">
     <div class="wrapper-masthead">
+      {% if jekyll.environment == 'staging'%}
+      <p class="banner">
+        <a href="https://www.wutanbath.org.uk/">
+          This is a development version of the site. Click here to see the live
+          content.
+        </a>
+      </p>
+      {% endif %}
       <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}{{ site.avatar }}"
-              alt="{{ site.title }}" /></a>
+        <header class="masthead clearfix" id="top">
+          <div class="logo-wrapper">
+            <a href="{{ '/' | relative_url }}" class="site-avatar">
+              <img src="{{ site.avatar | relative_url }}" alt="{{ site.title }}" />
+            </a>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-            <p class="site-description">{{ site.header }}</p>
+            <div class="site-info">
+              <h1 class="site-name">
+                <a href="{{ '/' | relative_url }}">
+                  <img src="{{ site.textlogo | relative_url }}" alt="{{ site.title }}" />
+                </a>
+              </h1>
+              <hr>
+              <p class="site-description">{{ site.header }}</p>
+            </div>
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Home</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-            <a href="{{ site.baseurl }}/classes">Classes</a>
-            <a href="{{ site.baseurl }}/contact">Contact</a>
-            <a href="{{ site.baseurl }}/archive">Archive</a>
+            <a href="{{ '/' | relative_url }}">Home</a>
+            <a href="{{ 'school/' | relative_url }}">School</a>
+            <a href="{{ 'arts/' | relative_url }}">Arts</a>
+            <a href="{{ 'instructors/' | relative_url }}">Instructors</a>
+            <a href="{{ 'classes/' | relative_url }}">Classes</a>
+            <a href="{{ 'fees/' | relative_url }}">Fees</a>
+            <a href="{{ 'contact/' | relative_url }}">Contact</a>
+            <a href="{{ 'gallery/' | relative_url }}">Gallery</a>
           </nav>
         </header>
       </div>
@@ -49,6 +72,7 @@
       <div class="container">
         <footer class="footer">
           {% include svg-icons.html %}
+          <p class="centered">Copyright © Wutan Bath 2023. All rights reserved.</p>
         </footer>
       </div>
     </div>

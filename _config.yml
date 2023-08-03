@@ -15,10 +15,11 @@ author: Wutan Bath
 description: Tai Chi and Kung Fu from the Wutan school in Bath, Bradford on Avon and Radstock
 
 # Header text
-header: "Control, discipline, flexibility, balance"
+header: For the body, mind and soul
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: /images/dragonphoenixbanner.png
+avatar: /assets/images/wutan_logo.svg
+textlogo: /assets/images/wutan_logo_text.svg
 
 #
 # Flags below are optional
@@ -32,11 +33,11 @@ footer-links:
   flickr:
   github: xanthipe/wutan-bath
   instagram: wutanbath
-  linkedin: 
+  linkedin:
   pinterest:
   rss: rss
   twitter: wutanbath
-  stackoverflow: 
+  stackoverflow:
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
   playconsole:
@@ -62,20 +63,14 @@ locale: en-GB
 
 # Your website URL (e.g. http://amitmerchant1990.github.io or http://www.amitmerchant.com)
 # Used for Sitemap.xml and your RSS feed
-url: www.wutanbath.org.uk
+url: https://www.wutanbath.org.uk
 enforce_ssl: https://www.wutanbath.org.uk
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: 
 
 #
 # !! You don't need to change any of the configuration flags below !!
 #
 
-permalink: /:title/
+permalink: /:year/:month/:day/:title/
 
 # The release of Jekyll Now that you're using
 version: v4.3.2
@@ -88,11 +83,11 @@ kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
+    css_class: "highlight"
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  style: :compressed # You might prefer to minify using :compressed
+  style: "compressed" # You might prefer to minify using :compressed
 
 # Use the following plug-ins
 plugins:
@@ -101,7 +96,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
 
-include: ['_pages']
+include: ["_pages"]
 
 paginate: 10
 paginate_path: /page:num/
@@ -113,4 +108,6 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - vendor
 
+show_drafts: false

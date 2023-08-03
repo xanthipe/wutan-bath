@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /archive/
-title: Posts Archive
+title: Archive
 ---
 
 # {{ page.title }}
@@ -9,11 +9,11 @@ title: Posts Archive
 <div id="archives">
   <section id="search">
     <div id="search-container">
-        <input type="text" id="search-input" placeholder="Search through the blog posts...">
+        <input type="text" id="search-input" placeholder="Search...">
         <ul id="results-container"></ul>
     </div>
 
-    <script src="{{ site.baseurl }}/assets/simple-jekyll-search.min.js" type="text/javascript"></script>
+    <script src="{{ '/assets/simple-jekyll-search.min.js' | relative_url }}" type="text/javascript"></script>
 
     <script>
         SimpleJekyllSearch({
@@ -25,7 +25,7 @@ title: Posts Archive
     </script>
   </section>
   <section>
-    <h4><a href="/categories">Search by post category</a></h4>
+    <h4><a href="{{'categories/' | relative_url }}">Search by post category</a></h4>
   </section>
   <section id="archive">
      <h3>Most Recent Posts</h3>
@@ -46,7 +46,7 @@ title: Posts Archive
           <h3 style="text-align:left;">{{ post.date | date: '%B %Y' }}</h3>
           {% endif %}
           {% endunless %}
-          <p><b><a href="{{ site.baseurl }}{{ post.url }}">{% if post.title and post.title != "" %}{{post.title}}{% else %}{{post.excerpt |strip_html}}{%endif%}</a></b> - {% if post.date and post.date != "" %}{{ post.date | date: "%e %B %Y" }}{%endif%}</p>
+          <p><b><a href="{{ post.url | relative_url }}">{% if post.title and post.title != "" %}{{post.title}}{% else %}{{post.excerpt |strip_html}}{%endif%}</a></b>{% if post.date and post.date != "" %} &ndash; {{ post.date | date: "%e %B %Y" }}{%endif%}</p>
           {% endfor %}
       </ul>
     <h3>Oldest Posts</h3>
