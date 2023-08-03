@@ -428,8 +428,10 @@ nav {
 }
 
 footer {
-  padding: 20px 0;
+  padding: 1.4rem 0;
   text-align: center;
+  color: $white;
+  font-size: small;
 }
 
 #bar {
@@ -483,28 +485,29 @@ Modules - reusable parts of our design
   line-height: 35px;
 
   a {
-      font-size: 14.5px;
-      padding: 2px 13px;
-      border: none;
-      border-radius: 50px;
-      color: #fff;
+    font-size: 14.5px;
+    padding: 2px 13px;
+    border: none;
+    border-radius: 50px;
+    color: $white;
+    background-color: $black;
 
-      &[data-category="Site"] {
-        background-color: #4CAF50;
-      }
-
-      &[data-category="Classes"] {
-        background-color: #1825bc;
-      }
-
-      &[data-category="Journey"] {
-        background-color: #5b0606;
-      }
-
-      &[data-category="History"] {
-        background-color: #5b099a;
-      }
+    &[data-category="Site"] {
+      background-color: #4CAF50;
     }
+
+    &[data-category="Classes"] {
+      background-color: #1825bc;
+    }
+
+    &[data-category="Journey"] {
+      background-color: #5b0606;
+    }
+
+    &[data-category="History"] {
+      background-color: #5b099a;
+    }
+  }
 }
 
 .pagination a,
