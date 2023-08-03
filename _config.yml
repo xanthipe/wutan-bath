@@ -109,3 +109,5 @@ exclude:
   - README.md
   - CNAME
   - vendor
+
+show_drafts: false

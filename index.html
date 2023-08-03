@@ -11,14 +11,14 @@ source="Path of the Complete Martial Artist" author="They Soon Tuan <br /> (Wuta
   <h3>Latest news</h3>
   {% for post in paginator.posts %}
   <article class="post">
-    <a href="{{ site.baseurl }}{{ post.url }}">
+    <a href="{{ post.url | relative_url }}">
       <h4 class="post_date">{{ post.title }}<span> &ndash; {{ post.date | date_to_string: "ordinal", "GB" }}</span></h4>
     </a>
     <div class="entry">
       {{ post.excerpt }}
     </div>
 
-    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    <a href="{{ post.url | relative_url }}" class="read-more">Read More</a>
   </article>
   {% endfor %}
 
@@ -49,5 +49,5 @@ source="Path of the Complete Martial Artist" author="They Soon Tuan <br /> (Wuta
     {% endif %}
   </div>
   {% endif %}
-  <a class="archive" href="{{ site.baseurl }}/archive/">Archive</a>
+  <a class="archive" href="{{ '/archive/' | relative_url }}">Archive</a>
 </div>
