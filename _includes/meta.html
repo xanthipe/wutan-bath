@@ -3,7 +3,7 @@
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
 {% if page.excerpt %}
-<meta property="og:description" content="{{ page.excerpt| strip_html }}" />
+<meta property="og:description" content="{{ page.excerpt | strip_html }}" />
 {% elsif page.description %}
 <meta property="og:description" content="{{ page.description }}" />
 {% else %}
@@ -17,9 +17,9 @@
 {% endif %}
 
 {% if page.image %}
-<meta property="og:image" content="{{ site.url }}{{ page.image }}"/>
-<meta property="twitter:image" content="{{ site.url }}{{ page.image }}"/>
+<meta property="og:image" content="{{ site.url }}{{ page.image | relative_url }}" />
+<meta property="twitter:image" content="{{ site.url }}{{ page.image | relative_url }}" />
 {% else %}
-<meta property="og:image" content="{{ site.url }}{{ site.avatar }}"/>
-<meta property="twitter:image" content="{{ site.url }}{{ site.avatar }}"/>
+<meta property="og:image" content="{{ site.url }}{{ site.avatar | relative_url }}" />
+<meta property="twitter:image" content="{{ site.url }}{{ site.avatar | relative_url }}" />
 {% endif %}
