@@ -1,4 +1,4 @@
-- name: Monday
+- day: Monday
   classes:
     - name: Tai Chi
       start: "18:30"
@@ -14,7 +14,7 @@
       location: Central United Reformed Church, Frome Road, Bath BA2 2QN
       map_link: nyw3JWx1VNhMAH2z5
       description: All levels of experience are welcome.
-- name: Tuesday
+- day: Tuesday
   classes:
     - name: Kids' Kung Fu
       start: "17:30"
@@ -44,7 +44,7 @@
       location: The Old Redhouse Farm Industrial Estate, Stratton on the Fosse, Radstock BA3 4QE
       map_link: mkW51q6QJhk31Jz57
       description: All levels of experience are welcome.
-- name: Wednesday
+- day: Wednesday
   classes:
     - name: Tai Chi (term time)
       start: "09:30"
@@ -84,7 +84,7 @@
 
         Please contact David if you're interested in Qigong but are not ready to commit to learning
         Tai Chi.
-- name: Thursday
+- day: Thursday
   classes:
     - name: Family Kung Fu
       start: "10:00"
@@ -93,7 +93,7 @@
       location: The Old Redhouse Farm Industrial Estate, Stratton on the Fosse, Radstock BA3 4QE
       map_link: mkW51q6QJhk31Jz57
       description: This class caters to families who wish to learn Kung Fu together.
-- name: Friday
+- day: Friday
   classes:
     - name: Tai Chi
       start: "7:30"
@@ -102,7 +102,7 @@
       location: Zen Rebel Studios, The Hollies 6A & B, Midsomer Norton, Radstock BA3 2DT
       map_link: c7P96FJczN6bhh2G6
       description: All levels of experience are welcome.
-- name: Saturday
+- day: Saturday
   classes:
     - name: Tai Chi
       start: "9:30"

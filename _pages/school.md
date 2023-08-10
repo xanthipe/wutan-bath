@@ -36,7 +36,7 @@ permalink: /school/
 {% for lineage_hash in site.data.lineage %}
 {% assign lineage = lineage_hash[1] %}
 <article class="clearfix">
-    <h2 id="{{ lineage_hash[0]}}">{{ lineage.title }}</h2>
+    <h2 id="{{ lineage_hash[0]}}">{{ lineage.name }}</h2>
     <div>
         {{ lineage.description  | markdownify }}
     </div>

@@ -16,7 +16,7 @@ permalink: /classes/
 
 {% for day in site.data.classes %}
 <section>
-    <h2 id="{{ day.name  | downcase }}">{{ day.name }}</h2>
+    <h2 id="{{ day.day | downcase }}">{{ day.day }}</h2>
     {% for class in day.classes %}
     {% assign instructor = site.data.instructors[class.instructor] %}
     <div class="class-container">
