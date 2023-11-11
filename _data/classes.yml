@@ -16,7 +16,14 @@
       description: All levels of experience are welcome.
 - day: Tuesday
   classes:
-    - name: Kids' Kung Fu
+    - name: Tai Chi
+      start: "13:00"
+      end: "14:30"
+      instructor: marick-baxter
+      location: Upper Hall at Weston All Saints Centre, High Street, Bath BA1 4BX
+      map_link: 
+      description: All levels of experience are welcome. 
+      - name: Kids' Kung Fu
       start: "17:30"
       end: "18:30"
       instructor: james-davies
@@ -86,13 +93,13 @@
         Tai Chi.
 - day: Thursday
   classes:
-    - name: Family Kung Fu
+    - name: Home Education Families Kung Fu
       start: "10:00"
       end: "11:00"
       instructor: james-davies
       location: The Old Redhouse Farm Industrial Estate, Stratton on the Fosse, Radstock BA3 4QE
       map_link: mkW51q6QJhk31Jz57
-      description: This class caters to families who wish to learn Kung Fu together.
+      description: This class caters to home education families who wish to learn Kung Fu together. It is taught by Jamillah Banjar, James Davies' partner, who is also a fully qualified tai chi teacher. You can contact her on 07759 927616 or jamillah_banjar@hotmal.co.uk.
 - day: Friday
   classes:
     - name: Tai Chi
