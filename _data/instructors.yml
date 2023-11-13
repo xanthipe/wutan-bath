@@ -49,11 +49,11 @@ marick-baxter:
 james-davies:
   name: James Davies
   description: |
-    After doing Yoga for 7 years, James felt he wanted something more active to compliment the progress he 
+    After doing Yoga for 7 years, James felt he wanted something more active to complement the progress he 
     had made with Yoga. He also needed to find a way of looking after himself physically to help his recovery 
     from various injuries. He started with Kung Fu and Kickboxing. He then went to Tai Chi as a kind of 
     &lsquo;why not?&rsquo;. He didn't expect it to offer anything different to Yoga and Kung Fu, but not only did he find 
-    that Tai Chi complimented both of them beautifully, it also has much to add. While he has benefited greatly 
+    that Tai Chi complemented both of them beautifully, it also has much to add. While he has benefited greatly 
     physically, the emotional and psychological well-being he has experienced have been life changing, and he 
     has made many friends and great memories along the way. 
 
@@ -65,6 +65,23 @@ james-davies:
   contact:
     email: huck_finn@hotmail.co.uk
     phone: 07811 084 673
+  prices: |
+    For adults:
+    * 1 class a week at £40 a month
+    * 2 or more classes a week at £50 a month
+
+    For children:
+    * 1 class a week at £20 a month
+    * 2 classes a week at £25 a month
+
+    Concessions are available.
+jamillah-banjar:
+  name: Jamillah Banjar
+  description: |
+    James Davies' partner, also a fully qualified Tai Chi instructor.
+  contact:
+    email: jamillah_banjar@hotmail.co.uk
+    phone: 07759 927 616
   prices: |
     For adults:
     * 1 class a week at £40 a month
