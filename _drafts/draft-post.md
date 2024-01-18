@@ -5,4 +5,4 @@ categories: Site
 tags: news
 ---
 
-This is a new post that we'll sort out later.
+This is a new post. It exists purely to demo draft posts.
