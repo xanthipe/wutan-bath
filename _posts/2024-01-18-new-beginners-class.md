@@ -5,4 +5,4 @@ categories: Classes
 tags: news
 ---
 
-[Wednesday]({{"/classes/#wednesday" | relative_url }}) evening Tai Chi with David Rutherford is starting a new beginners&apos; class on the 21st February. The class runs from 19:00 to 20:30, consists of Qigong and learning the Tai Chi short form, and the first session is free. [Contact David]({{"/contact/#david-rutherford-contact" | relative_url }}) for more information.
+[Wednesday]({{"/classes/#wednesday" | relative_url }}) evening Tai Chi with David Rutherford is starting a new beginners&apos; class on the 6th of March. The class runs from 19:00 to 20:30, consists of Qigong and learning the Tai Chi short form, and the first session is free. [Contact David]({{"/contact/#david-rutherford-contact" | relative_url }}) for more information.
