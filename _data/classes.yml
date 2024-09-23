@@ -4,14 +4,14 @@
       start: "18:30"
       end: "20:00"
       instructor: marick-baxter
-      location: Central United Reformed Church, Frome Road, Bath BA2 2QN
+      location: Rush Hill United Reformed Church, Frome Road, Bath BA2 2QN
       map_link: nyw3JWx1VNhMAH2z5
       description: All levels of experience are welcome.
     - name: Kung Fu
       start: "20:00"
       end: "21:30"
       instructor: marick-baxter
-      location: Central United Reformed Church, Frome Road, Bath BA2 2QN
+      location: Rush Hill United Reformed Church, Frome Road, Bath BA2 2QN
       map_link: nyw3JWx1VNhMAH2z5
       description: All levels of experience are welcome.
 - day: Tuesday
@@ -20,8 +20,8 @@
       start: "13:00"
       end: "14:30"
       instructor: marick-baxter
-      location: Upper Hall at Weston All Saints Centre, High Street, Bath BA1 4BX
-      map_link: e4tvym1pQZ1ZsWcYA
+      location: Weston Hub, Penn Hill Road, Bath, BA1 4EH
+      map_link: k5t3GAERuYymE4sZ7
       description: All levels of experience are welcome.
     - name: Kids' Kung Fu
       start: "17:30"
@@ -34,7 +34,7 @@
       start: "18:30"
       end: "20:00"
       instructor: marick-baxter
-      location: Central United Reformed Church, Frome Road, Bath BA2 2QN
+      location: Rush Hill United Reformed Church, Frome Road, Bath BA2 2QN
       map_link: nyw3JWx1VNhMAH2z5
       description: All levels of experience are welcome.
     - name: Tai Chi
