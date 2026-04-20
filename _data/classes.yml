@@ -79,18 +79,20 @@
         This class is suitable for advanced students.
     - name: Tai Chi
       start: "19:00"
-      end: "21:15"
+      end: "21:00"
       instructor: david-rutherford
-      location: Hayesfield Lower School, Brougham Hayes, Bath BA2 3QX
-      map_link: yHmXikrBBTaLc1Cn9
+      location: Henrietta Park, Henrietta Rd, Bathwick, Bath BA2 6LY
+      map_link: r4TpZz7i7q6PbVmR6
       description: |
         This is an ongoing class practicing Qigong followed by miscellaneous
         training (Pa Gua, sensing hands etc.) and finishing with the Yang-style
         short form. All levels of experience are welcome, but please contact David
         for information on specific beginner sessions.
 
-        Please contact David if you're interested in Qigong but are not ready to commit to learning
-        Tai Chi.
+        You are welcome to come to just the Qigong portion of the class at a reduced rate.
+
+        Note that this class moves between Henrietta Park and Hayesfield Lower Girls' School
+        depending on time of year.
 - day: Thursday
   classes:
     - name: Home Education Families Kung Fu
@@ -100,6 +102,13 @@
       location: The Old Redhouse Farm Industrial Estate, Stratton on the Fosse, Radstock BA3 4QE
       map_link: mkW51q6QJhk31Jz57
       description: This class caters to home education families who wish to learn Kung Fu together.
+    - name: Tai Chi
+      start: "13:00"
+      end: "14:30"
+      instructor: marick-baxter
+      location: Larkhall URC Church, Avondale Buildings, Bath BA1 6NO
+      map_link: DsGof5PeMngYL6a89
+      description: All levels of experience are welcome.
 - day: Friday
   classes:
     - name: Tai Chi
