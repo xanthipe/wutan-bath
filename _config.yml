@@ -6,13 +6,13 @@
 title: Wutan Bath
 
 # Brief description of the site for SEO
-tagline: Tai Chi and Kung Fu with the Bath branch of Wutan
+tagline: Tai Chi and Kung Fu with the Bath and surrounding branches of Wutan
 
 # Name of the author
 author: Wutan Bath
 
 # Site description for SEO
-description: Tai Chi and Kung Fu from the Wutan school in Bath, Bradford on Avon and Radstock
+description: Tai Chi, Qigong, and Kung Fu from the Wutan school in Bath, Bradford on Avon, Midsomer Norton, and Radstock
 
 # Header text
 header: For the body, mind and soul
@@ -36,7 +36,7 @@ footer-links:
   linkedin:
   pinterest:
   rss: rss
-  twitter: wutanbath
+  twitter:
   stackoverflow:
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
@@ -54,7 +54,6 @@ facebook:
 social:
   name: Wutan Bath
   links:
-    - https://twitter.com/wutanbath
     - https://www.facebook.com/Wutanbath
     - https://instagram.com/wutanbath
     - https://github.com/xanthipe/wutan-bath
