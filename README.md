@@ -6,7 +6,7 @@ Built with [Jekyll](https://jekyllrb.com/) using a modified [Reverie](https://gi
 * Making Specific Types of Updates
   * [News/Blog Posts](#news-posts)
   * [Classes, Instructors and Photos](#pages)
-* [YAML file structure - notes on the complicated bits](yaml-file-structure)
+* [YAML file structure - notes on the complicated bits](#yaml-file-structure)
 
 ## Updating Basics
 
