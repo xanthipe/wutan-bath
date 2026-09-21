@@ -1,6 +1,12 @@
 # Wutan Bath Website
 
-Built with [Jekyll](https://jekyllrb.com/) using a modified [Reverie](https://github.com/amitmerchant1990/reverie) theme. 
+Built with [Jekyll](https://jekyllrb.com/) using a modified [Reverie](https://github.com/amitmerchant1990/reverie) theme.
+
+* [Updating Basics - how Markdown and YAML work](#updating-basics)
+* Making Specific Types of Updates
+  * [News/Blog Posts](#news-posts)
+  * [Classes, Instructors and Photos](#pages)
+* [YAML file structure - notes on the complicated bits](yaml-file-structure)
 
 ## Updating Basics
 
@@ -67,8 +73,7 @@ This is a special bit of Liquid formatting that pulls in `quote.html` and fills 
   * If you're including a link or an image, you should write the path to what you're pointing at as `{{"/page/#anchor" | relative_url }}` so it works wherever on the website.
   * If you want to 'float' an image to the right or left of a piece of text so the text flows around it, use `#right` or `#left` as the anchor and use `{:.clearfix}` at the start of the first line where you'd like the text to go back to normal. Magic will happen.
 * Save to commit the changes to the `develop` branch.
-  * This kicks off the build process that puts the changes on the staging server - use the Actions tab at the top of the screen to see how it's going.
-* Wait about a minute or so, then check your changes on the staging server.
+  * Ignore anything that says "build failure" - the staging server is currently down so the staging build always fails.
 * When you're happy, move your draft post to the `_posts` folder and change the name so it looks like `yyyy-mm-dd-post-name-in-kebab-case.md` where the date part is today's date.
   * Note: It can be a past date, but not a future date for Reasons.
 * Create a pull request to merge `develop` to `master` (Pull Requests tab, new pull request, set base to master) and merge.
@@ -81,8 +86,7 @@ This is a special bit of Liquid formatting that pulls in `quote.html` and fills 
   * If you're including a link or an image in a Markdown-friendly value, you should write the path to what you're pointing at as `(../page/#anchor) ` as the page can't handle Liquid via a data file (boo!). The dots mean "go up a level then work back" if you're interested.
   * If you want to 'float' an image to the right or left of a piece of text so the text flows around it, use `#right` or `#left` as the anchor. Magic will happen.
 * Save to commit the changes to the `develop` branch.
-  * This kicks off the build process that puts the changes on the staging server - use the Actions tab at the top of the screen to see how it's going.
-* Wait about a minute or so, then check your changes on the staging server.
+  * Ignore anything that says "build failure" - the staging server is currently down so the staging build always fails.
 * When you're happy, create a pull request to merge `develop` to `master` (Pull Requests tab, new pull request, set base to master) and merge.
 * Wait for the build to run, check the site has updated!
 
